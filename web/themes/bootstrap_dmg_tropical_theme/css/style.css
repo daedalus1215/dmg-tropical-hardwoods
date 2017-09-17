@@ -1,0 +1,53 @@
+/**
+ * Place your custom styles here.
+ */
+
+
+
+body {
+    font-family: 'Lato', 'Arial', sans-serif;
+    color: #555;
+    font-size: 20px;
+}
+
+h1, h2, h3 {
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #BF55EC;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+/**
+******************* Landing Page ***************** Beginnings
+**/
+
+/* Slogan Section - Main Slogan */
+.field.field--name-field-main-slogan.field--type-string.field--label-hidden.field--item {
+    text-align: center;
+}
+/* Slogan Section - Side Slogan */
+.field.field--name-field-side-slogan.field--type-string-long.field--label-hidden.field--item {
+    text-align: center;
+}
+
+
+/* Promo Section */
+.field--item.col-md-4 {
+    padding: 1px;
+}
