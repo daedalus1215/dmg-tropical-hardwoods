@@ -28,5 +28,5 @@ stylesheets-remove:
   
 libraries:
   - 'bootstrap_dmg_tropical_theme/global-styling'
-  - 'bootstrap_dmg_tropical_theme/front-page-styling'
-  - 'bootstrap_dmg_tropical_theme/product-page-styling'
+#  - 'bootstrap_dmg_tropical_theme/front-page-styling'
+#  - 'bootstrap_dmg_tropical_theme/product-page-styling'

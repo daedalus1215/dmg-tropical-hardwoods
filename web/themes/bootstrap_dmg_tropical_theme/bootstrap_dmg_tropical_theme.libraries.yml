@@ -4,12 +4,12 @@ global-styling:
       css/main.css: {}
       '//fonts.googleapis.com/css?family=Lato': { type: external, minified: true }
 
-front-page-styling:
-    css:
-        theme:
-            'css/pages/landing-page.css': {}
-
-product-page-styling:
-    css:
-        theme:
-            'css/pages/product-page.css': {}
+#front-page-styling:
+#    css:
+#        theme:
+#            'css/pages/landing-page.css': {}
+#
+#product-page-styling:
+#    css:
+#        theme:
+#            'css/pages/product-page.css': {}

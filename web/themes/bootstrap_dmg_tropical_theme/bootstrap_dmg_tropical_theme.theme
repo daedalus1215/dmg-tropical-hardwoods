@@ -5,9 +5,9 @@
  *
  * Place your custom PHP code in this file.
  */
-function bootstrap_dmg_tropical_preprocess_page(&$variables) {
-    var_dump($variables);
-    if ($variables['is_front']) {
-        $variables['#attached']['library'][] = 'bootstrap_dmg_tropical_theme/front-page-styling';
-    }
-}
+//function bootstrap_dmg_tropical_preprocess_page(&$variables) {
+//    var_dump($variables);
+//    if ($variables['is_front']) {
+//        $variables['#attached']['library'][] = 'bootstrap_dmg_tropical_theme/front-page-styling';
+//    }
+//}

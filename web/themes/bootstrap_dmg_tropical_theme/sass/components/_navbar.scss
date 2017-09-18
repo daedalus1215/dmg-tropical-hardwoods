@@ -4,17 +4,11 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : Sep 9, 2017, 10:21:53 AM
+    Created on : Sep 17, 2017, 12:12:24 PM
     Author     : theAdmin
 */
 
-@import 'fonts';
-@import 'colors';
-
-@import 'generic';
-
-@import 'components/_navbar';
-@import 'pages/_landing-page';
-@import 'pages/_product-page';
-
-    
+#navbar.navbar-default.container-fluid {
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
