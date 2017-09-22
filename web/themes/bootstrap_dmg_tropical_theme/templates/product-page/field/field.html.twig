@@ -44,15 +44,12 @@
     'field--name-' ~ field_name|clean_class,
     'field--type-' ~ field_type|clean_class,
     'field--label-' ~ label_display,
-    'col-md-8',
-    'mt-20'
   ]
 %}
 {%
   set title_classes = [
     'field--label',
     label_display == 'visually_hidden' ? 'sr-only',
-    
   ]
 %}
 

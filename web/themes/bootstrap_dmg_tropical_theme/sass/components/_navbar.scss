@@ -12,3 +12,8 @@ and open the template in the editor.
     margin-bottom: 0px;
     border-radius: 0px;
 }
+
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active {
+    background-color: $secondary-color;
+}

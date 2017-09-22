@@ -58,6 +58,12 @@ h2:after {
   margin: 0 auto;
   margin-top: 30px; }
 
+.mt-20 {
+  margin-top: 20px; }
+
+.p-50 {
+  padding: 50px; }
+
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -70,6 +76,9 @@ and open the template in the editor.
 #navbar.navbar-default.container-fluid {
   margin-bottom: 0px;
   border-radius: 0px; }
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active {
+  background-color: #226666; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -157,7 +166,7 @@ and open the template in the editor.
 */
 .field.field--name-field-display-name.field--type-string.field--label-visually_hidden {
   background-color: #226666;
-  height: 15vh;
+  height: 100px;
   text-align: center;
   vertical-align: center;
   padding-top: 1%;
