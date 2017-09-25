@@ -10,7 +10,7 @@ and open the template in the editor.
 */
 
 .field.field--name-field-display-name.field--type-string.field--label-visually_hidden {
-    background-color: $secondary-color;
+    background-color: $action-color;
     height: 100px;
     text-align: center;
     vertical-align: center;
@@ -22,3 +22,34 @@ and open the template in the editor.
     }
 }
 
+.field__items.testimonial-wrapper {
+    clear: left;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/sites/default/files/products/the-sun-rises.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/sites/default/files/products/the-sun-rises.jpg);
+    background-size: cover;
+    color: #fff;
+    background-position: center;
+    background-attachment: fixed;
+    
+    @include respond-to(medium) {
+        height: 300px;
+    }
+    
+    @include respond-to(small) {
+        height: 500px;
+    }
+    
+    
+    //@todo: look up breakpoint how tos with sass
+}
+
+.paragraph.paragraph--type--testimonial.paragraph--view-mode--default {
+    blockquote {
+        padding: 5px;
+    }
+}
+
+.field field--name-field-testimonial-quote.field--type-string.field--label-visually_hidden {
+    text-align: right;
+    margin-top: -20px;
+}

@@ -36,7 +36,7 @@ and open the template in the editor.
 */
 body {
   font-family: "Lato", "Arial", sans-serif;
-  color: #555;
+  color: #a4a4a4;
   font-size: 20px; }
 
 h1, h2, h3 {
@@ -52,7 +52,7 @@ h2 {
 h2:after {
   display: block;
   height: 2px;
-  background-color: #226666;
+  background-color: #bce3c6;
   content: " ";
   width: 100px;
   margin: 0 auto;
@@ -63,6 +63,10 @@ h2:after {
 
 .p-50 {
   padding: 50px; }
+
+#navbar {
+  margin-top: -16px;
+  z-index: 9; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -78,7 +82,7 @@ and open the template in the editor.
   border-radius: 0px; }
 
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active {
-  background-color: #226666; }
+  background-color: #bce3c6; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -89,23 +93,51 @@ and open the template in the editor.
     Created on : Sep 9, 2017, 10:41:33 AM
     Author     : theAdmin
 */
-/*@import '../main';*/
+/* Navbar */
+#navbar.front-navbar {
+  background: transparent;
+  /* We want to hero image to bleed through, so we are making the background transparent. */
+  border: 0; }
+  #navbar.front-navbar * {
+    color: #eceeed;
+    /* To get to the text we are far down the chain. */ }
+  #navbar.front-navbar #navbar-collapse.front-navbar {
+    position: absolute;
+    /* This stops the hamburger's list from pushing the hero image down. '*/ }
+
 /* Hero Section - Display Name */
-.field.field--name-field-display-name.field--type-text.field--label-hidden.field--item {
+.field.field--name-field-displaying-name.field--type-text.field--label-hidden.field--item {
+  width: 100%;
+  padding: 0 2%;
   position: absolute;
-  width: 1140px;
-  top: 50%;
-  left: 50%;
+  /* we want to pull the text towards the center of the screen. */
+  top: 15%;
+  left: 60%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
-  .field.field--name-field-display-name.field--type-text.field--label-hidden.field--item h1 {
+  transform: translate(-50%, -50%);
+  color: #eceeed;
+  /* since we will be text over dark background */ }
+  .field.field--name-field-displaying-name.field--type-text.field--label-hidden.field--item h1 {
     margin-top: 0;
     margin-bottom: 20px;
-    color: #fff;
     font-size: 240%;
     word-spacing: 4px;
     letter-spacing: 1px; }
+
+/* Hero Section - Hero Jumbotron image */
+#landing_page_hero_jumbotron {
+  margin-top: -75px;
+  /* we want to pull the image to the top of the page */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/sites/default/files/landing_page/hero_image.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh; }
+
+/* Slogan Section - generalities */
+.paragraph.paragraph--type--slogan-paragraph.paragraph--view-mode--default {
+  padding-bottom: 30px; }
 
 /* Slogan Section - Main Slogan */
 .field.field--name-field-main-slogan.field--type-string.field--label-hidden.field--item {
@@ -116,43 +148,21 @@ and open the template in the editor.
   text-align: center;
   margin-bottom: 30px; }
 
-.paragraph.paragraph--type--slogan-paragraph.paragraph--view-mode--default {
-  padding-bottom: 30px; }
-
-.field.field--name-field-body.field--type-string-long.field--label-hidden.field--item {
-  padding-right: 20px;
-  padding-bottom: 20px;
-  margin-bottom: 40px; }
-
 /* Promo Section */
 .field--item.col-md-4 {
   padding: 1px; }
 
 .field field--name-field-body field--type-string-long field--label-hidden field--item {
   font-size: 90%;
-  padding: 1px; }
+  padding-right: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 40px; }
 
 .icon-big {
   font-size: 200%;
   display: block;
-  color: #226666;
+  color: #bce3c6;
   margin-bottom: 10px; }
-
-.field field--name-field-display-name field--type-text field--label-hidden field--item {
-  position: absolute;
-  width: 1140px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
-
-#landing_page_hero_jumbotron {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/sites/default/files/landing_page/hero_image.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  height: 75vh; }
 
 /*@import '../main';*/
 /*
@@ -165,7 +175,7 @@ and open the template in the editor.
     Author     : theAdmin
 */
 .field.field--name-field-display-name.field--type-string.field--label-visually_hidden {
-  background-color: #226666;
+  background-color: #bce3c6;
   height: 100px;
   text-align: center;
   vertical-align: center;
@@ -173,5 +183,27 @@ and open the template in the editor.
   margin-bottom: 20px; }
   .field.field--name-field-display-name.field--type-string.field--label-visually_hidden h3 {
     color: #ffffff; }
+
+.field__items.testimonial-wrapper {
+  clear: left;
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/sites/default/files/products/the-sun-rises.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/sites/default/files/products/the-sun-rises.jpg);
+  background-size: cover;
+  color: #fff;
+  background-position: center;
+  background-attachment: fixed; }
+  @media (min-width: 992px) {
+    .field__items.testimonial-wrapper {
+      height: 300px; } }
+  @media (min-width: 767px) {
+    .field__items.testimonial-wrapper {
+      height: 500px; } }
+
+.paragraph.paragraph--type--testimonial.paragraph--view-mode--default blockquote {
+  padding: 5px; }
+
+.field field--name-field-testimonial-quote.field--type-string.field--label-visually_hidden {
+  text-align: right;
+  margin-top: -20px; }
 
 /*# sourceMappingURL=main.css.map */

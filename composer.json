@@ -26,6 +26,7 @@
         "drupal/devel": "~1.0",
         "drupal/paragraphs": "^1.2",
         "drupal/taxonomy_menu": "^3.3",
+        "drupal/viewsreference": "^1.0",
         "drush/drush": "~8.0",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"

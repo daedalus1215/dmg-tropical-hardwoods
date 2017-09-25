@@ -9,26 +9,56 @@ and open the template in the editor.
 */
 
 
-/*@import '../main';*/
+/* Navbar */
+#navbar.front-navbar {
+    background: transparent; /* We want to hero image to bleed through, so we are making the background transparent. */
+    border: 0;
+    
+    * {
+        color: $inverse-primary-color; /* To get to the text we are far down the chain. */
+    }
+    
+    #navbar-collapse.front-navbar {
+        position: absolute; /* This stops the hamburger's list from pushing the hero image down. '*/
+    }
+}
+
 
 /* Hero Section - Display Name */
-.field.field--name-field-display-name.field--type-text.field--label-hidden.field--item {
-    position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
+.field.field--name-field-displaying-name.field--type-text.field--label-hidden.field--item {
+    width: 100%;
+    padding: 0 2%;
+    position: absolute; /* we want to pull the text towards the center of the screen. */
+    top: 15%;
+    left: 60%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    color: $inverse-primary-color; /* since we will be text over dark background */
     
     h1 {
         margin-top: 0;
         margin-bottom: 20px;
-        color: #fff;
         font-size: 240%;
         word-spacing: 4px;
         letter-spacing: 1px;
-    }
+    }   
+}
+
+/* Hero Section - Hero Jumbotron image */
+#landing_page_hero_jumbotron {
+    margin-top: -75px; /* we want to pull the image to the top of the page */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/sites/default/files/landing_page/hero_image.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+}
+
+
+/* Slogan Section - generalities */
+.paragraph.paragraph--type--slogan-paragraph.paragraph--view-mode--default {
+    padding-bottom: 30px;
 }
 
 /* Slogan Section - Main Slogan */
@@ -42,15 +72,6 @@ and open the template in the editor.
     margin-bottom: 30px;
 }
 
-.paragraph.paragraph--type--slogan-paragraph.paragraph--view-mode--default {
-    padding-bottom: 30px;
-}
-
-.field.field--name-field-body.field--type-string-long.field--label-hidden.field--item {
-    padding-right: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 40px;
-}
 
 /* Promo Section */
 .field--item.col-md-4 {
@@ -58,33 +79,21 @@ and open the template in the editor.
 }
 
 .field field--name-field-body field--type-string-long field--label-hidden field--item {
-    font-size: 90%;
-    padding: 1px;
+    font-size: 90%;    
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .icon-big {
     font-size: 200%;
     display: block;
-    color: $secondary-color;
+    color: $action-color;
     margin-bottom: 10px;
 }
 
-.field field--name-field-display-name field--type-text field--label-hidden field--item {
-    	position: absolute;
-	width: 1140px;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-}
 
-#landing_page_hero_jumbotron {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/sites/default/files/landing_page/hero_image.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    height: 75vh;
-}
+
+
 
 

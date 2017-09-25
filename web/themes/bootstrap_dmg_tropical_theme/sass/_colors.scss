@@ -8,5 +8,8 @@ and open the template in the editor.
     Author     : theAdmin
 */
 
-$primary-color: #555;
-$secondary-color: #226666;
+$primary-color: #a4a4a4;            // The main font color.
+$secondary-primary-color: #c8c8c8;  // shadow for widgets that work with main font color.
+$inverse-primary-color: #eceeed;    // If the background is black instead of white we use this for main font color.
+$action-color: #bce3c6;             // The action color to draw people in.
+$secondary-action-color: #f7e4ba;   // Secondary action color that complements first and can also help highlight.

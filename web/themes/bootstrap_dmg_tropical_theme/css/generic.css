@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$font-stack".
-        on line 12 of sass/generic.scss
+        on line 35 of sass/generic.scss
 
-7:     Created on : Sep 9, 2017, 10:29:19 AM
-8:     Author     : theAdmin
-9: *\/
-10: 
-11: body {
-12:     font-family: $font-stack;
-13:     color: $primary-color;
-14:     font-size: $font-size;
-15: }
-16: 
-17: h1, h2, h3 {
+30: 
+31: 
+32: 
+33: 
+34: body {
+35:     font-family: $font-stack;
+36:     color: $primary-color;
+37:     font-size: $font-size;
+38: }
+39: 
+40: h1, h2, h3 {
 
 Backtrace:
-sass/generic.scss:12
+sass/generic.scss:35
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -69,4 +69,4 @@ C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$font-stack\".\A         on line 12 of sass/generic.scss\A \A 7:     Created on : Sep 9, 2017, 10:29:19 AM\A 8:     Author     : theAdmin\A 9: */\A 10: \A 11: body {\A 12:     font-family: $font-stack;\A 13:     color: $primary-color;\A 14:     font-size: $font-size;\A 15: }\A 16: \A 17: h1, h2, h3 {"; }
+  content: "Error: Undefined variable: \"$font-stack\".\A         on line 35 of sass/generic.scss\A \A 30: \A 31: \A 32: \A 33: \A 34: body {\A 35:     font-family: $font-stack;\A 36:     color: $primary-color;\A 37:     font-size: $font-size;\A 38: }\A 39: \A 40: h1, h2, h3 {"; }
