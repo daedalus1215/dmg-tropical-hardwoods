@@ -36,7 +36,7 @@ and open the template in the editor.
 */
 body {
   font-family: "Lato", "Arial", sans-serif;
-  color: #a4a4a4;
+  color: #1c1c1c;
   font-size: 20px; }
 
 h1, h2, h3 {
@@ -52,7 +52,7 @@ h2 {
 h2:after {
   display: block;
   height: 2px;
-  background-color: #bce3c6;
+  background-color: #58b970;
   content: " ";
   width: 100px;
   margin: 0 auto;
@@ -82,7 +82,7 @@ and open the template in the editor.
   border-radius: 0px; }
 
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active {
-  background-color: #bce3c6; }
+  background-color: #58b970; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -99,7 +99,7 @@ and open the template in the editor.
   /* We want to hero image to bleed through, so we are making the background transparent. */
   border: 0; }
   #navbar.front-navbar * {
-    color: #eceeed;
+    color: #eeeeee;
     /* To get to the text we are far down the chain. */ }
   #navbar.front-navbar #navbar-collapse.front-navbar {
     position: absolute;
@@ -116,7 +116,7 @@ and open the template in the editor.
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  color: #eceeed;
+  color: #eeeeee;
   /* since we will be text over dark background */ }
   .field.field--name-field-displaying-name.field--type-text.field--label-hidden.field--item h1 {
     margin-top: 0;
@@ -161,7 +161,7 @@ and open the template in the editor.
 .icon-big {
   font-size: 200%;
   display: block;
-  color: #bce3c6;
+  color: #58b970;
   margin-bottom: 10px; }
 
 /*@import '../main';*/
@@ -175,7 +175,7 @@ and open the template in the editor.
     Author     : theAdmin
 */
 .field.field--name-field-display-name.field--type-string.field--label-visually_hidden {
-  background-color: #bce3c6;
+  background-color: #58b970;
   height: 100px;
   text-align: center;
   vertical-align: center;
