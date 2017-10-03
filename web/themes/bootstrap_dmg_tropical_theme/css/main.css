@@ -105,6 +105,39 @@ and open the template in the editor.
     position: absolute;
     /* This stops the hamburger's list from pushing the hero image down. '*/ }
 
+#navbar.front-navbar * {
+  background-color: transparent;
+  border: none;
+  box-shadow: unset; }
+
+/* Navbar - Menu Items */
+html.js body.path-frontpage.has-glyphicons header#navbar.navbar.navbar-default.container-fluid.front-navbar div#navbar-collapse.navbar-collapse.collapse.front-navbar div.region.region-navigation-collapsible nav#block-bootstrap-dmg-tropical-theme-main-menu ul.menu.nav.navbar-nav li.expanded.dropdown.open a.dropdown-toggle:focus {
+  background-color: transparent;
+  border-bottom: 1px solid #58b970; }
+
+/* Navbar - Hamburger */
+html.js body.path-frontpage.has-glyphicons header#navbar.navbar.navbar-default.container-fluid.front-navbar div.navbar-header button.navbar-toggle {
+  /* Making sure the hamburger has some room from the edge of the screen. */
+  margin-top: 25px;
+  margin-left: 15px;
+  float: left; }
+
+/* Navbar - Hamburger (I know this is wierd, should use the above, but idk how to include below into above.) */
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: transparent; }
+
+/* Navbar - Hamburger - the lines inside. */
+html.js body.path-frontpage.has-glyphicons header#navbar.navbar.navbar-default.container-fluid.front-navbar div.navbar-header button.navbar-toggle span.icon-bar {
+  background-color: #eeeeee; }
+
+/* Navbar - Hamburger - line dividing hamburger and items. */
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: #58b970; }
+
+/* Navbar - Hamburger - Items */
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: transparent; }
+
 /* Hero Section - Display Name */
 .field.field--name-field-displaying-name.field--type-text.field--label-hidden.field--item {
   width: 100%;
@@ -133,7 +166,10 @@ and open the template in the editor.
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  height: 100vh; }
+  height: 100vh;
+  /* make sure the hero image spans the length of the screen. */
+  margin-right: -20px;
+  margin-left: -20px; }
 
 /* Slogan Section - generalities */
 .paragraph.paragraph--type--slogan-paragraph.paragraph--view-mode--default {
@@ -149,6 +185,10 @@ and open the template in the editor.
   margin-bottom: 30px; }
 
 /* Promo Section */
+/*  Promo Section - the boxes of each Promo. */
+.paragraph.paragraph--type--promo-paragraph.paragraph--view-mode--default {
+  padding: 30px; }
+
 .field--item.col-md-4 {
   padding: 1px; }
 
@@ -163,6 +203,16 @@ and open the template in the editor.
   display: block;
   color: #58b970;
   margin-bottom: 10px; }
+
+/* Testimonials */
+/* Testimonials - the entire row (section) */
+#block-views-block-testimonial-view-block-1 {
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/sites/default/files/landing_page/the-sun-rises.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(/sites/default/files/the-sun-rises.jpg);
+  background-size: cover;
+  color: #fff;
+  background-position: center;
+  background-attachment: fixed; }
 
 /*@import '../main';*/
 /*
