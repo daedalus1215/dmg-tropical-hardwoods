@@ -214,6 +214,19 @@ html.js body.path-frontpage.has-glyphicons header#navbar.navbar.navbar-default.c
   background-position: center;
   background-attachment: fixed; }
 
+/* 
+  Testimonials - each col in the row (not really the row, that 
+  is dictated by the view and the classes we set there, but inside 
+  of it, which both testimonials share). 
+*/
+.testimonial-type.teaser.clearfix {
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
 /*@import '../main';*/
 /*
 To change this license header, choose License Headers in Project Properties.
