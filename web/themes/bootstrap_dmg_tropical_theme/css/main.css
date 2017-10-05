@@ -144,13 +144,24 @@ html.js body.path-frontpage.has-glyphicons header#navbar.navbar.navbar-default.c
   padding: 0 2%;
   position: absolute;
   /* we want to pull the text towards the center of the screen. */
-  top: 15%;
-  left: 60%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   color: #eeeeee;
-  /* since we will be text over dark background */ }
+  /* since we will be text over dark background */
+  /* Hike up the text, so that it is higher over the jumbrotron image. */ }
+  @media (max-width: 767px) {
+    .field.field--name-field-displaying-name.field--type-text.field--label-hidden.field--item {
+      top: 5%;
+      left: 50%; } }
+  @media (min-width: 767px) and (max-width: 992px) {
+    .field.field--name-field-displaying-name.field--type-text.field--label-hidden.field--item {
+      top: 15%;
+      left: 60%; } }
+  @media (min-width: 992px) {
+    .field.field--name-field-displaying-name.field--type-text.field--label-hidden.field--item {
+      top: 15%;
+      left: 60%; } }
   .field.field--name-field-displaying-name.field--type-text.field--label-hidden.field--item h1 {
     margin-top: 0;
     margin-bottom: 20px;
@@ -255,10 +266,10 @@ and open the template in the editor.
   color: #fff;
   background-position: center;
   background-attachment: fixed; }
-  @media (min-width: 992px) {
+  @media (min-width: 767px) and (max-width: 992px) {
     .field__items.testimonial-wrapper {
       height: 300px; } }
-  @media (min-width: 767px) {
+  @media (max-width: 767px) {
     .field__items.testimonial-wrapper {
       height: 500px; } }
 

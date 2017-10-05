@@ -69,21 +69,36 @@ html.js body.path-frontpage.has-glyphicons header#navbar.navbar.navbar-default.c
 .field.field--name-field-displaying-name.field--type-text.field--label-hidden.field--item {
     width: 100%;
     padding: 0 2%;
-    position: absolute; /* we want to pull the text towards the center of the screen. */
-    top: 15%;
-    left: 60%;
+    position: absolute; /* we want to pull the text towards the center of the screen. */    
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     color: $inverse-primary-color; /* since we will be text over dark background */
+    
 
+    /* Hike up the text, so that it is higher over the jumbrotron image. */
+    @include respond-to(small) {
+        top: 5%;
+        left: 50%;
+    }    
+    
+    @include respond-to(medium) {
+        top: 15%;
+        left: 60%;
+    }
+
+    @include respond-to(large) {
+        top: 15%;
+        left: 60%;
+    }
+    
     h1 {
         margin-top: 0;
         margin-bottom: 20px;
         font-size: 240%;
         word-spacing: 4px;
         letter-spacing: 1px;
-    }   
+    }     
 }
 
 /* Hero Section - Hero Jumbotron image */

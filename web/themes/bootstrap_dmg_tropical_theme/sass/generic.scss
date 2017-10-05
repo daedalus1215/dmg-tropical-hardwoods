@@ -10,19 +10,19 @@ and open the template in the editor.
 
 @mixin respond-to($breakpoint) {
   @if $breakpoint == "small" {
-    @media (min-width: 767px) {
+    @media (max-width: 767px) {
       @content;
     }
   }
 
   @else if $breakpoint == "medium" {
-    @media (min-width: 992px) {
+    @media (min-width:767px) and (max-width: 992px) {
       @content;
     }
   }
 
   @else if $breakpoint == "large" {
-    @media (min-width: 1200px) {
+    @media (min-width:992px) {
       @content;
     }
   }
