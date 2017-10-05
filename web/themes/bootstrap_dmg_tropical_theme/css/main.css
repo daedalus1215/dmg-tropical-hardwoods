@@ -156,11 +156,11 @@ html.js body.path-frontpage.has-glyphicons header#navbar.navbar.navbar-default.c
       left: 50%; } }
   @media (min-width: 767px) and (max-width: 992px) {
     .field.field--name-field-displaying-name.field--type-text.field--label-hidden.field--item {
-      top: 15%;
+      top: 5%;
       left: 60%; } }
   @media (min-width: 992px) {
     .field.field--name-field-displaying-name.field--type-text.field--label-hidden.field--item {
-      top: 15%;
+      top: 5%;
       left: 60%; } }
   .field.field--name-field-displaying-name.field--type-text.field--label-hidden.field--item h1 {
     margin-top: 0;

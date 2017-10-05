@@ -83,12 +83,12 @@ html.js body.path-frontpage.has-glyphicons header#navbar.navbar.navbar-default.c
     }    
     
     @include respond-to(medium) {
-        top: 15%;
+        top: 5%;
         left: 60%;
     }
 
     @include respond-to(large) {
-        top: 15%;
+        top: 5%;
         left: 60%;
     }
     
