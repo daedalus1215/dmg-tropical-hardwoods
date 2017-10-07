@@ -65,7 +65,6 @@
         'navbar',
         theme.settings.navbar_inverse ? 'navbar-inverse' : 'navbar-default',
         theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
-        is_front ? 'front-navbar' : ''
       ]
         %}
         <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">

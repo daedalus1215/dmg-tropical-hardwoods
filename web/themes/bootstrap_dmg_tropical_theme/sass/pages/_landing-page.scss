@@ -8,60 +8,14 @@ and open the template in the editor.
     Author     : theAdmin
 */
 
-
-/* Navbar */
-#navbar.front-navbar {
-    background: transparent; /* We want to hero image to bleed through, so we are making the background transparent. */
-    border: 0;
-
-    * {
-        color: $inverse-primary-color; /* To get to the text we are far down the chain. */
-    }
-
-    #navbar-collapse.front-navbar {
-        position: absolute; /* This stops the hamburger's list from pushing the hero image down. '*/
-    }      
+.navbar-header {
+    margin-top: 1em;
 }
 
-#navbar.front-navbar * {
-    background-color: transparent;
-    border: none;
-    box-shadow: unset;
-}
-
-/* Navbar - Menu Items */
-html.js body.path-frontpage.has-glyphicons header#navbar.navbar.navbar-default.container-fluid.front-navbar div#navbar-collapse.navbar-collapse.collapse.front-navbar div.region.region-navigation-collapsible nav#block-bootstrap-dmg-tropical-theme-main-menu ul.menu.nav.navbar-nav li.expanded.dropdown.open a.dropdown-toggle:focus {
-    background-color: transparent;
-    border-bottom: 1px solid $action-color;
-}
-
-
-/* Navbar - Hamburger */
-html.js body.path-frontpage.has-glyphicons header#navbar.navbar.navbar-default.container-fluid.front-navbar div.navbar-header button.navbar-toggle {
-    /* Making sure the hamburger has some room from the edge of the screen. */
-    margin-top: 25px;
-    margin-left: 15px;
-    float: left; 
-}
-
-/* Navbar - Hamburger (I know this is wierd, should use the above, but idk how to include below into above.) */
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: transparent;
-}
-
-/* Navbar - Hamburger - the lines inside. */
-html.js body.path-frontpage.has-glyphicons header#navbar.navbar.navbar-default.container-fluid.front-navbar div.navbar-header button.navbar-toggle span.icon-bar {
-    background-color: $inverse-primary-color;
-}
 
 /* Navbar - Hamburger - line dividing hamburger and items. */
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border-color: $action-color;
-}
-
-/* Navbar - Hamburger - Items */
-.nav > li > a:hover, .nav > li > a:focus {
-    background-color: transparent;
+    border-color: $secondary-action-color;
 }
 
 
@@ -185,5 +139,13 @@ html.js body.path-frontpage.has-glyphicons header#navbar.navbar.navbar-default.c
 }
 
 
+/* Quad Product Landing Page section */
 
+/* The image under the individual products*/
+.field.field--name-field-product-images.field--type-image.field--label-hidden.col-md-4.product-front.field--item > a > img {
+    @include respond-to(small) {
+        margin-left: auto;
+        margin-right: auto;    
+    }    
+}
 
