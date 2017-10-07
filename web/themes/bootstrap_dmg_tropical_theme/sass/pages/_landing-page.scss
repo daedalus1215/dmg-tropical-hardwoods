@@ -142,10 +142,15 @@ and open the template in the editor.
 /* Quad Product Landing Page section */
 
 /* The image under the individual products*/
-.field.field--name-field-product-images.field--type-image.field--label-hidden.col-md-4.product-front.field--item > a > img {
+/*.field.field--name-field-product-images.field--type-image.field--label-hidden.col-md-4.product-front.field--item > a > img {
     @include respond-to(small) {
         margin-left: auto;
         margin-right: auto;    
     }    
+}*/
+/* Block that all 4 Quad Product Landing Page section sits. */
+#block-views-block-quad-landing-page-block-1 {
+    /* Give this section and the testimonial section white space (room to breathe). */
+    margin-top: 2em;
 }
 
