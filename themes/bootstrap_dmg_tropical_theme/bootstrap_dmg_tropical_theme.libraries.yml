@@ -3,7 +3,8 @@ global-styling:
     theme:
       css/main.css: {}
       '//fonts.googleapis.com/css?family=Lato': { type: external, minified: true }
-      '//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css' : { type: external }
+      '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css': { type: external, minified: true }
+
 
 #front-page-styling:
 #    css:

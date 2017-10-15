@@ -23,29 +23,14 @@ and open the template in the editor.
 .field.field--name-field-displaying-name.field--type-text.field--label-hidden.field--item {
     width: 100%;
     padding: 0 2%;
-    position: absolute; /* we want to pull the text towards the center of the screen. */    
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     color: $inverse-primary-color; /* since we will be text over dark background */
     
-
-    /* Hike up the text, so that it is higher over the jumbrotron image. */
-    @include respond-to(small) {
-        top: 5%;
-        left: 50%;
-    }    
-    
-    @include respond-to(medium) {
-        top: 5%;
-        left: 60%;
-    }
-
-    @include respond-to(large) {
-        top: 5%;
-        left: 60%;
-    }
-    
+    float: left;
+    margin-top: 50%;
+    margin-left: 50%;
     h1 {
         margin-top: 0;
         margin-bottom: 20px;
@@ -71,7 +56,7 @@ and open the template in the editor.
 
 /* Slogan Section - generalities */
 .paragraph.paragraph--type--slogan-paragraph.paragraph--view-mode--default {
-    padding-bottom: 30px;
+    margin-top: 4em;
 }
 
 /* Slogan Section - Main Slogan */
@@ -86,7 +71,16 @@ and open the template in the editor.
 }
 
 
+
+
+
 /* Promo Section */
+
+/* Promot Section - wrapper around the Promos collectively. */
+.field.field--name-field-promo-paragraph.field--type-entity-reference-revisions.field--label-hidden.field--items {
+    margin-top: 4em;
+}
+
 /*  Promo Section - the boxes of each Promo. */
 .paragraph.paragraph--type--promo-paragraph.paragraph--view-mode--default {
     padding: 30px;
@@ -116,6 +110,7 @@ and open the template in the editor.
 
 /* Testimonials - the entire row (section) */
 #block-views-block-testimonial-view-block-1 {
+    margin-top: 4em;
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/sites/default/files/landing_page/the-sun-rises.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.0)), url(/sites/default/files/the-sun-rises.jpg);
     background-size: cover;
@@ -139,18 +134,43 @@ and open the template in the editor.
 }
 
 
+
 /* Quad Product Landing Page section */
 
-/* The image under the individual products*/
-/*.field.field--name-field-product-images.field--type-image.field--label-hidden.col-md-4.product-front.field--item > a > img {
-    @include respond-to(small) {
-        margin-left: auto;
-        margin-right: auto;    
-    }    
-}*/
 /* Block that all 4 Quad Product Landing Page section sits. */
 #block-views-block-quad-landing-page-block-1 {
     /* Give this section and the testimonial section white space (room to breathe). */
-    margin-top: 2em;
+    margin-top: 4em;
 }
 
+/* Each Product block */
+.contextual-region.product-type.landing-page-view.clearfix {
+    margin-bottom: 3em; /* when the screen gets small we need to add some white space. */ 
+}
+
+/* The main image for the product that is showing. */
+.field.field--name-field-product-images.field--type-image.field--label-hidden.col-md-4.product-front.field--item {
+    width: 100%;
+}
+
+/* Product Display Name */
+.field.field--name-field-display-name.field--type-string.field--label-hidden.field--item {
+    display: inline-block; /* let's make the display name carry down to the next line. */
+
+    margin-bottom: .7em; /* Add some white space */
+    margin-top: .2em; /* Add some white space */
+}
+
+.quality {
+    color: $action-color; /* Make the icons the appropriate color. */
+    
+}
+
+/* The Quality points of the product. */
+.quality .quality-text {
+    color: $primary-color; /* Make sure text color is set back to original (overriding .quality) */    
+    padding-left: .5em; /* Give it some room from the icon. */
+    @include respond-to(medium) {    
+        font-size: 80%;
+    }
+}

@@ -11,3 +11,32 @@ and open the template in the editor.
 $font-stack:  'Lato', 'Arial', sans-serif;
 $font-size: 20px;
 $font-weight: 300;
+
+
+$small-icon: 120%;
+
+
+/* Relative to font-icons, currently only font-awesome ones. */
+.small-icon.fa.fa-bug {
+    margin-left: .2em;
+}
+
+.small-icon.fa.fa-globe {
+    margin-left: .2em;
+}
+
+.small-icon.fa.fa-tint {
+    margin-left: .4em;
+}
+
+.small-icon.fa.fa-shield {
+    margin-left: .3em;
+}
+
+.small-icon.fa.fa-umbrella {
+    margin-left: .2em;
+}
+
+.small-icon.fa.fa-wrench {
+    margin-left: .2em;
+}

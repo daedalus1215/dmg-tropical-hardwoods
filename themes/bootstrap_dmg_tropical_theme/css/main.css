@@ -16,6 +16,25 @@ and open the template in the editor.
     Created on : Sep 9, 2017, 10:23:32 AM
     Author     : theAdmin
 */
+/* Relative to font-icons, currently only font-awesome ones. */
+.small-icon.fa.fa-bug {
+  margin-left: .2em; }
+
+.small-icon.fa.fa-globe {
+  margin-left: .2em; }
+
+.small-icon.fa.fa-tint {
+  margin-left: .4em; }
+
+.small-icon.fa.fa-shield {
+  margin-left: .3em; }
+
+.small-icon.fa.fa-umbrella {
+  margin-left: .2em; }
+
+.small-icon.fa.fa-wrench {
+  margin-left: .2em; }
+
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -68,6 +87,9 @@ h2:after {
   margin-top: -16px;
   z-index: 9; }
 
+.small-icon {
+  font-size: 120%; }
+
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -104,26 +126,14 @@ and open the template in the editor.
 .field.field--name-field-displaying-name.field--type-text.field--label-hidden.field--item {
   width: 100%;
   padding: 0 2%;
-  position: absolute;
-  /* we want to pull the text towards the center of the screen. */
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   color: #eeeeee;
   /* since we will be text over dark background */
-  /* Hike up the text, so that it is higher over the jumbrotron image. */ }
-  @media (max-width: 767px) {
-    .field.field--name-field-displaying-name.field--type-text.field--label-hidden.field--item {
-      top: 5%;
-      left: 50%; } }
-  @media (min-width: 767px) and (max-width: 992px) {
-    .field.field--name-field-displaying-name.field--type-text.field--label-hidden.field--item {
-      top: 5%;
-      left: 60%; } }
-  @media (min-width: 992px) {
-    .field.field--name-field-displaying-name.field--type-text.field--label-hidden.field--item {
-      top: 5%;
-      left: 60%; } }
+  float: left;
+  margin-top: 50%;
+  margin-left: 50%; }
   .field.field--name-field-displaying-name.field--type-text.field--label-hidden.field--item h1 {
     margin-top: 0;
     margin-bottom: 20px;
@@ -146,7 +156,7 @@ and open the template in the editor.
 
 /* Slogan Section - generalities */
 .paragraph.paragraph--type--slogan-paragraph.paragraph--view-mode--default {
-  padding-bottom: 30px; }
+  margin-top: 4em; }
 
 /* Slogan Section - Main Slogan */
 .field.field--name-field-main-slogan.field--type-string.field--label-hidden.field--item {
@@ -158,6 +168,10 @@ and open the template in the editor.
   margin-bottom: 30px; }
 
 /* Promo Section */
+/* Promot Section - wrapper around the Promos collectively. */
+.field.field--name-field-promo-paragraph.field--type-entity-reference-revisions.field--label-hidden.field--items {
+  margin-top: 4em; }
+
 /*  Promo Section - the boxes of each Promo. */
 .paragraph.paragraph--type--promo-paragraph.paragraph--view-mode--default {
   padding: 30px; }
@@ -180,6 +194,7 @@ and open the template in the editor.
 /* Testimonials */
 /* Testimonials - the entire row (section) */
 #block-views-block-testimonial-view-block-1 {
+  margin-top: 4em;
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/sites/default/files/landing_page/the-sun-rises.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(/sites/default/files/the-sun-rises.jpg);
   background-size: cover;
@@ -201,17 +216,42 @@ and open the template in the editor.
   margin-bottom: 40px; }
 
 /* Quad Product Landing Page section */
-/* The image under the individual products*/
-/*.field.field--name-field-product-images.field--type-image.field--label-hidden.col-md-4.product-front.field--item > a > img {
-    @include respond-to(small) {
-        margin-left: auto;
-        margin-right: auto;    
-    }    
-}*/
 /* Block that all 4 Quad Product Landing Page section sits. */
 #block-views-block-quad-landing-page-block-1 {
   /* Give this section and the testimonial section white space (room to breathe). */
-  margin-top: 2em; }
+  margin-top: 4em; }
+
+/* Each Product block */
+.contextual-region.product-type.landing-page-view.clearfix {
+  margin-bottom: 3em;
+  /* when the screen gets small we need to add some white space. */ }
+
+/* The main image for the product that is showing. */
+.field.field--name-field-product-images.field--type-image.field--label-hidden.col-md-4.product-front.field--item {
+  width: 100%; }
+
+/* Product Display Name */
+.field.field--name-field-display-name.field--type-string.field--label-hidden.field--item {
+  display: inline-block;
+  /* let's make the display name carry down to the next line. */
+  margin-bottom: .7em;
+  /* Add some white space */
+  margin-top: .2em;
+  /* Add some white space */ }
+
+.quality {
+  color: #58b970;
+  /* Make the icons the appropriate color. */ }
+
+/* The Quality points of the product. */
+.quality .quality-text {
+  color: #1c1c1c;
+  /* Make sure text color is set back to original (overriding .quality) */
+  padding-left: .5em;
+  /* Give it some room from the icon. */ }
+  @media (min-width: 767px) and (max-width: 992px) {
+    .quality .quality-text {
+      font-size: 80%; } }
 
 /*@import '../main';*/
 /*
