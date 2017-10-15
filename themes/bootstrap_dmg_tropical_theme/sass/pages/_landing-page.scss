@@ -27,10 +27,25 @@ and open the template in the editor.
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     color: $inverse-primary-color; /* since we will be text over dark background */
-    
-    float: left;
-    margin-top: 50%;
-    margin-left: 50%;
+
+    @include respond-to(small) {
+        position: absolute;
+        left: 50%;
+        top: 5%;
+    }
+
+    @include respond-to(medium) {
+        position: absolute;
+        left: 75%;
+        top: 15%;        
+    }
+
+    @include respond-to(large) {
+        position: absolute;
+        left: 75%;
+        top: 15%;
+    }
+
     h1 {
         margin-top: 0;
         margin-bottom: 20px;
