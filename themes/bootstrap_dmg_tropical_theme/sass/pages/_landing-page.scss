@@ -27,6 +27,7 @@ and open the template in the editor.
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     color: $inverse-primary-color; /* since we will be text over dark background */
+    font-size: 200%;
 
     @include respond-to(small) {
         position: absolute;

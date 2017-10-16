@@ -130,7 +130,8 @@ and open the template in the editor.
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   color: #eeeeee;
-  /* since we will be text over dark background */ }
+  /* since we will be text over dark background */
+  font-size: 200%; }
   @media (max-width: 767px) {
     .field.field--name-field-displaying-name.field--type-text.field--label-hidden.field--item {
       position: absolute;

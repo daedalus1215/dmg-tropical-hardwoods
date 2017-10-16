@@ -63,30 +63,31 @@
 %}
 
 
-
-{% if label_hidden %}
-    {% if multiple %}
-        <div{{ attributes.addClass(classes, 'field--items') }}>      
-            {% for item in items %}
-                <div{{ item.attributes.addClass(style_classes) }}>{{ item.content }}</div>
-            {% endfor %}
-        </div>
-    {% else %}
-        {% for item in items %}
-            <div{{ attributes.addClass(classes, style_classes) }}><h2>{{ item.content }}</h2></div>
-        {% endfor %}
-    {% endif %}
-{% else %}
-    <div{{ attributes.addClass(classes) }}>
-        <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
+<div id='js--section-benefits'>
+    {% if label_hidden %}
         {% if multiple %}
-            <div class="field__items">
-            {% endif %}
-            {% for item in items %}
-                <div{{ item.attributes.addClass(style_classes) }}><h2>{{ item.content }}</h2></div>
-            {% endfor %}
-            {% if multiple %}
+            <div{{ attributes.addClass(classes, 'field--items') }}>      
+                {% for item in items %}
+                    <div{{ item.attributes.addClass(style_classes) }}>{{ item.content }}</div>
+                {% endfor %}
             </div>
+        {% else %}
+            {% for item in items %}
+                <div{{ attributes.addClass(classes, style_classes) }}><h2>{{ item.content }}</h2></div>
+            {% endfor %}
         {% endif %}
-    </div>
-{% endif %}
+    {% else %}
+        <div{{ attributes.addClass(classes) }}>
+            <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
+            {% if multiple %}
+                <div class="field__items">
+                {% endif %}
+                {% for item in items %}
+                    <div{{ item.attributes.addClass(style_classes) }}><h2>{{ item.content }}</h2></div>
+                {% endfor %}
+                {% if multiple %}
+                </div>
+            {% endif %}
+        </div>
+    {% endif %}
+</div>
