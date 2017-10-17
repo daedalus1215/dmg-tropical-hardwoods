@@ -19,33 +19,40 @@ and open the template in the editor.
 }
 
 
-/* Hero Section - Display Name */
-.field.field--name-field-displaying-name.field--type-text.field--label-hidden.field--item {
+
+/* Hero Section */
+
+/* Hero Section - The Display Name */
+#display-name-wrapper {
+    color: $inverse-primary-color; /* since we will be text over dark background */    
     width: 100%;
-    padding: 0 2%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    color: $inverse-primary-color; /* since we will be text over dark background */
-    font-size: 200%;
+    width: 90%; // makes sure the display name recoils in, it sticks outside of the window - at certain widths,
+
+    @include respond-to(large) {
+        position: absolute;
+        left: 60%;
+        top: 15%;        
+    }
+
+    @include respond-to(medium) {
+        position: absolute;
+        left: 60%;
+        top: 15%;        
+    }
 
     @include respond-to(small) {
         position: absolute;
         left: 50%;
         top: 5%;
     }
+}
 
-    @include respond-to(medium) {
-        position: absolute;
-        left: 75%;
-        top: 15%;        
-    }
-
-    @include respond-to(large) {
-        position: absolute;
-        left: 75%;
-        top: 15%;
-    }
+/* Hero Section - Display Name */
+.field.field--name-field-displaying-name.field--type-text.field--label-hidden.field--item {    
+    font-size: 200%;
 
     h1 {
         margin-top: 0;
@@ -54,6 +61,44 @@ and open the template in the editor.
         word-spacing: 4px;
         letter-spacing: 1px;
     }     
+}
+
+/* Hero Section - Button Wrapper */
+#hero-btns {
+    margin-top: 2em;
+}
+
+/* Hero Section - Individual Buttons */
+.hero-btn {
+    border: solid 1px;
+    border-radius: 200px;
+    padding: 10px 30px;
+    color: $inverse-primary-color;
+    font-size: 105%;
+    text-decoration: none;
+    /* First we need to help some browsers along for this to work.
+     Just because a vendor prefix is there, doesn't mean it will
+     work in a browser made by that vendor either, it's just for
+     future-proofing purposes I guess. */
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition: border .5s linear, border-bottom .5s linear, text-decoration .5s linear, color .5s linear, border-radius .5s linear;
+}
+
+.hero-btn:hover {
+    border: none;
+    border-bottom: solid $action-color;
+    text-decoration: none;
+    color: $action-color;
+    border-radius: initial;
+}
+
+/* Hero Section - Individual Product Button */
+#hero-prd-btn {
+    margin-right: 1em;
 }
 
 /* Hero Section - Hero Jumbotron image */
@@ -67,7 +112,17 @@ and open the template in the editor.
     /* make sure the hero image spans the length of the screen. */
     margin-right: -20px;
     margin-left: -20px;
+
+    @include respond-to(small) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/sites/default/files/landing_page/hero_image-1395x996.jpg);
+    }
 }
+
+
+
+
+
+
 
 
 /* Slogan Section - generalities */

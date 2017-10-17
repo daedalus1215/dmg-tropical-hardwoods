@@ -52,6 +52,9 @@
     label_display == 'visually_hidden' ? 'sr-only',
   ]
 %}
+
+{% set hero_button_wrapper_id = "hero-btns" %}
+{% set hero_product_btn = "hero-prd-btn" %}
 <div id="display-name-wrapper">
 <h1>
 {% if label_hidden %}
@@ -81,6 +84,8 @@
   </div>
 {% endif %}
 </h1>
-<a type="button" class="btn btn-primary btn-sm" href="#js--section-products">Products</a>
-<a type="button" class="btn btn-primary btn-sm" href="#js--section-benefits">Benefits</a>
+<div id="{{hero_button_wrapper_id}}">
+  <a type="button" id="{{hero_product_btn}}" class="hero-btn" href="#js--section-products">Products</a>
+  <a type="button" class="hero-btn" href="#js--section-benefits">Benefits</a>
+</div>
 </div>
