@@ -1,0 +1,14 @@
+.paragraph.paragraph--type--employee.paragraph--view-mode--default {
+    text-align: center; // center all text
+    background-color: $action-color;
+    padding: 2em; // padding around the section
+    margin-left: -25px; // make sure the left side expands to edge of window
+    margin-right: -25px; // make sure the right side expands to edge of window
+}
+
+.field.field--name-field-employee-image.field--type-image.field--label-hidden.field--item .img-responsive {
+    margin-left: auto; // centers image
+    margin-right: auto; // centers image
+    margin-bottom: 2em; // give us space between quote and image
+    border-radius: 200px; // border around the image to make it a circle.
+}

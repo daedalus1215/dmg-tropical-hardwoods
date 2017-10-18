@@ -346,4 +346,17 @@ and open the template in the editor.
   text-align: right;
   margin-top: -20px; }
 
+.paragraph.paragraph--type--employee.paragraph--view-mode--default {
+  text-align: center;
+  background-color: #58b970;
+  padding: 2em;
+  margin-left: -25px;
+  margin-right: -25px; }
+
+.field.field--name-field-employee-image.field--type-image.field--label-hidden.field--item .img-responsive {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  border-radius: 200px; }
+
 /*# sourceMappingURL=main.css.map */
