@@ -80,20 +80,17 @@ and open the template in the editor.
      Just because a vendor prefix is there, doesn't mean it will
      work in a browser made by that vendor either, it's just for
      future-proofing purposes I guess. */
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
+  -o-transition:.2s;
+  -ms-transition:.2s;
+  -moz-transition:.2s;
+  -webkit-transition:.2s;
   /* ...and now for the proper property */
-  transition: border .5s linear, border-bottom .5s linear, text-decoration .5s linear, color .5s linear, border-radius .5s linear;
+  transition: color .2s linear;
 }
 
 .hero-btn:hover {
-    border: none;
-    border-bottom: solid $action-color;
     text-decoration: none;
     color: $action-color;
-    border-radius: initial;
 }
 
 /* Hero Section - Individual Product Button */
@@ -114,7 +111,7 @@ and open the template in the editor.
     margin-left: -20px;
 
     @include respond-to(small) {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/sites/default/files/landing_page/hero_image-1395x996.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/sites/default/files/landing_page/hero_image-300x300.jpg);
     }
 }
 

@@ -132,17 +132,17 @@ and open the template in the editor.
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 90%; }
-  @media (min-width: 992px) {
+  @media (min-width: 70em) {
     #display-name-wrapper {
       position: absolute;
       left: 60%;
       top: 15%; } }
-  @media (min-width: 767px) and (max-width: 992px) {
+  @media (min-width: 47.5em) and (max-width: 70em) {
     #display-name-wrapper {
       position: absolute;
       left: 60%;
       top: 15%; } }
-  @media (max-width: 767px) {
+  @media (max-width: 47em) {
     #display-name-wrapper {
       position: absolute;
       left: 50%;
@@ -174,19 +174,16 @@ and open the template in the editor.
    Just because a vendor prefix is there, doesn't mean it will
    work in a browser made by that vendor either, it's just for
    future-proofing purposes I guess. */
-  -o-transition: .5s;
-  -ms-transition: .5s;
-  -moz-transition: .5s;
-  -webkit-transition: .5s;
+  -o-transition: .2s;
+  -ms-transition: .2s;
+  -moz-transition: .2s;
+  -webkit-transition: .2s;
   /* ...and now for the proper property */
-  transition: border .5s linear, border-bottom .5s linear, text-decoration .5s linear, color .5s linear, border-radius .5s linear; }
+  transition: color .2s linear; }
 
 .hero-btn:hover {
-  border: none;
-  border-bottom: solid #58b970;
   text-decoration: none;
-  color: #58b970;
-  border-radius: initial; }
+  color: #58b970; }
 
 /* Hero Section - Individual Product Button */
 #hero-prd-btn {
@@ -204,9 +201,9 @@ and open the template in the editor.
   /* make sure the hero image spans the length of the screen. */
   margin-right: -20px;
   margin-left: -20px; }
-  @media (max-width: 767px) {
+  @media (max-width: 47em) {
     #landing_page_hero_jumbotron {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/sites/default/files/landing_page/hero_image-1395x996.jpg); } }
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/sites/default/files/landing_page/hero_image-300x300.jpg); } }
 
 /* Slogan Section - generalities */
 .paragraph.paragraph--type--slogan-paragraph.paragraph--view-mode--default {
@@ -303,7 +300,7 @@ and open the template in the editor.
   /* Make sure text color is set back to original (overriding .quality) */
   padding-left: .5em;
   /* Give it some room from the icon. */ }
-  @media (min-width: 767px) and (max-width: 992px) {
+  @media (min-width: 47.5em) and (max-width: 70em) {
     .quality .quality-text {
       font-size: 80%; } }
 
@@ -335,10 +332,10 @@ and open the template in the editor.
   color: #fff;
   background-position: center;
   background-attachment: fixed; }
-  @media (min-width: 767px) and (max-width: 992px) {
+  @media (min-width: 47.5em) and (max-width: 70em) {
     .field__items.testimonial-wrapper {
       height: 300px; } }
-  @media (max-width: 767px) {
+  @media (max-width: 47em) {
     .field__items.testimonial-wrapper {
       height: 500px; } }
 
