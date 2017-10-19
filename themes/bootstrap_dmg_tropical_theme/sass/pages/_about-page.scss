@@ -1,3 +1,7 @@
+
+/* Employee Section. */
+
+/* Employee Section - the overall view */
 .paragraph.paragraph--type--employee.paragraph--view-mode--default {
     text-align: center; // center all text
     background-color: $action-color;
@@ -6,9 +10,31 @@
     margin-right: -25px; // make sure the right side expands to edge of window
 }
 
+/* Employee Section - employee image */
 .field.field--name-field-employee-image.field--type-image.field--label-hidden.field--item .img-responsive {
     margin-left: auto; // centers image
     margin-right: auto; // centers image
     margin-bottom: 2em; // give us space between quote and image
     border-radius: 200px; // border around the image to make it a circle.
+}
+
+
+
+
+
+/* Map Section*/
+
+/* Map Section - the wrapper around the google map iframe. */
+.g-map {
+    width: 100%;
+    height: 630px;
+}
+
+/* Map Section - form*/
+#contact-message-feedback-form {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 1em;
+    margin-top: 1em;
 }

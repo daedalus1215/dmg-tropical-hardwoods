@@ -19,6 +19,7 @@
         "drupal/blog": "2.x-dev",
         "drupal/bootstrap_layouts": "^4.1",
         "drupal/console": "^1.0.1",
+        "drupal/contact_block": "^1.4",
         "drupal/core": "~8.0",
         "drupal/drush": "^6.0@RC",
         "drupal/entity_reference_revisions": "^1.3",
