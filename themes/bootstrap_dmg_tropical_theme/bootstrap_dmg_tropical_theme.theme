@@ -1,14 +1,33 @@
 <?php
+
+
+
 /**
  * @file
  * Bootstrap sub-theme.
  *
  * Place your custom PHP code in this file.
  */
-//function bootstrap_dmg_tropical_preprocess_html(&$vars) {
-//$d = '';    
-//// Add font awesome cdn.
-//  drupal_add_css('//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css', array(
-//      'type' => 'external'
-//    ));
-//}
+// function bootstrap_dmg_tropical_preprocess_html(&$vars) {
+// $d = '';    
+// // Add font awesome cdn.
+//   drupal_add_css('//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css', array(
+//       'type' => 'external'
+//     ));
+// }
+
+/**
+ * Implements hook_preprocess_HOOK() for node.html.twig.
+ */
+//function bootstrap_dmg_tropical_theme_preprocess_node(&$variables) {
+//    $HISTORY_NODE_ID = 25; // we know the history node id is 25.
+//        // Remove the "Add new comment" link on teasers or when the comment form is
+//    // displayed on the page.
+//    $node = $variables['node'];
+//    $nid = $node->id();
+//    if ($nid == $HISTORY_NODE_ID) {
+////        $variables['attributes']['class'][] = 'history-page';
+//        $variables['url'] = $_SERVER['REQUEST_URI'];
+//        $variables['#cache']['contexts'][] = 'url.path';
+//    }
+//  }

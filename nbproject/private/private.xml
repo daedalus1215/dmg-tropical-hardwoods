@@ -3,32 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/dmg/web/themes/bootstrap_dmg_tropical_theme/sass/pages/_landing-page.scss</file>
-            <file>file:/C:/xampp/htdocs/dmg/web/themes/bootstrap_dmg_tropical_theme/templates/node.html.twig</file>
-            <file>file:/C:/xampp/htdocs/dmg/web/sites/default/default.services.yml</file>
-            <file>file:/C:/xampp/htdocs/dmg/web/themes/bootstrap_dmg_tropical_theme/css/main.css</file>
-            <file>file:/C:/xampp/htdocs/dmg/web/sites/default/services.yml</file>
-            <file>file:/C:/xampp/htdocs/dmg/web/themes/bootstrap_dmg_tropical_theme/templates/product-page/testimonial-paragraph/field--paragraph--field-testimonial-body--testimonial.html.twig</file>
-            <file>file:/C:/xampp/htdocs/dmg/web/sites/default/default.settings.php</file>
-            <file>file:/C:/xampp/htdocs/dmg/web/themes/bootstrap_dmg_tropical_theme/templates/product-page/testimonial-paragraph/field--paragraph--field-testimonial-quote--testimonial.html.twig</file>
-            <file>file:/C:/xampp/htdocs/dmg/config/sync/.htaccess</file>
-            <file>file:/C:/xampp/htdocs/dmg/composer.json</file>
-            <file>file:/C:/xampp/htdocs/dmg/web/themes/bootstrap_dmg_tropical_theme/templates/product-page/testimonial-paragraph/paragraph--testimonial--default.html.twig</file>
-            <file>file:/C:/xampp/htdocs/dmg/web/themes/bootstrap_dmg_tropical_theme/templates/landing-page/System/page--front.html.twig</file>
-            <file>file:/C:/xampp/htdocs/dmg/web/themes/bootstrap_dmg_tropical_theme/sass/_colors.scss</file>
-            <file>file:/C:/xampp/htdocs/dmg/web/themes/bootstrap_dmg_tropical_theme/templates/product-page/testimonial-paragraph/field--node--field-testimonial--product-type.html.twig</file>
-            <file>file:/C:/xampp/htdocs/dmg/web/themes/bootstrap_dmg_tropical_theme/sass/pages/_product-page.scss</file>
-            <file>file:/C:/xampp/htdocs/dmg/web/themes/bootstrap_dmg_tropical_theme/css/style.css</file>
-            <file>file:/C:/xampp/htdocs/dmg/web/sites/default/settings.php</file>
-            <file>file:/C:/xampp/htdocs/dmg/web/index.php</file>
-            <file>file:/C:/xampp/htdocs/dmg/token/.htaccess</file>
-            <file>file:/C:/xampp/htdocs/dmg/web/autoload.php</file>
-            <file>file:/C:/xampp/htdocs/dmg/web/themes/bootstrap_dmg_tropical_theme/templates/system/page.html.twig</file>
-            <file>file:/C:/xampp/htdocs/dmg/web/themes/bootstrap_dmg_tropical_theme/sass/generic.scss</file>
-            <file>file:/C:/xampp/htdocs/dmg/web/web.config</file>
-            <file>file:/C:/xampp/htdocs/dmg/web/.htaccess</file>
-            <file>file:/C:/xampp/htdocs/dmg/web/sites/example.sites.php</file>
-            <file>file:/C:/xampp/htdocs/dmg/web/themes/bootstrap_dmg_tropical_theme/templates/product-page/field/field--node--field-description--product-type.html.twig</file>
+            <file>file:/C:/xampp/htdocs/dmg/themes/bootstrap_dmg_tropical_theme/sass/pages/_about-page.scss</file>
+            <file>file:/C:/xampp/htdocs/dmg/themes/bootstrap_dmg_tropical_theme/templates/about-page/block--contactblock.html.twig</file>
         </group>
     </open-files>
 </project-private>

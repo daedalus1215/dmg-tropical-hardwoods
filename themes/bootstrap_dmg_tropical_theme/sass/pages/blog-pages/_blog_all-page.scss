@@ -1,0 +1,60 @@
+
+// route: /blog (blog all) - This is the route that leads us to the page (view) where we aggregate blogs.
+
+/* 
+* /blog (blog all) - This is the page class on the /blog page where we aggregate blogs. 
+*/
+.blog-aggregation-view.views-row {
+    margin-bottom: 4em;
+}
+
+
+/* 
+* /blog (blog all) - header (injected with template views-view--blog--blog_all.html.twig)
+*/
+#blog-all-header {
+    margin-left: -25px;
+    margin-right: -25px;
+    background-color: $action-color;
+    margin-bottom: 4em;
+    text-align: center;
+    color: $inverse-primary-color;
+}
+
+
+#blog-all-title {
+    padding-top:1%;
+}
+
+#blog-all-side-title {
+    padding-bottom: 1%;
+}
+
+
+
+/*
+* /blog (blog all) - the title of the blog.
+*/
+.view-blog-title {
+    font-size: 1.4em;
+}
+
+
+/*
+* /blog (blog all) - author field.
+*/
+.view-blog-author {
+    font-size: .75em;
+}
+
+.view-blog-author::after {
+    content: '-'; // pushes a hyphen between the author's username and the date.
+}
+
+
+/*
+* /blog (blog all) - date field.
+*/
+.view-blog-date {
+    font-size: .75em;
+}

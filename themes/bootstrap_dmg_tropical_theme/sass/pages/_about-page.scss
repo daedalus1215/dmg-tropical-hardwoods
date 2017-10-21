@@ -20,9 +20,26 @@
 
 
 
+/* About us Section */
+
+/* About us Section - the field*/
+.field.field--name-field-about-us-.field--type-text-long.field--label-hidden.field--item {
+    margin-top: 4em;
+}
+
+
+
+
+
+
 
 
 /* Map Section*/
+
+/* Map Section - the block that wraps around the contact form. */
+#block-contactblock {
+    margin-top: 4em;
+}
 
 /* Map Section - the wrapper around the google map iframe. */
 .g-map {
@@ -42,10 +59,19 @@
 }
 
 /* Map Section - form*/
-#contact-message-feedback-form {
-    margin-top: 4em;
-
+#contact-message-reach-out-form {
     @include respond-to(medium) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: rgba(0,0,0,0.3);
+        width: 40%;
+        padding: 10px;
+    }
+
+    
+    @include respond-to(large) {
+        margin-top: 4em;    
         position: absolute;
         top: 0;
         right: 0;
@@ -54,17 +80,5 @@
         padding: 10px;
         margin-right: 1em;
         margin-top: 1em;
-    }
-
-    
-    @include respond-to(large) {
-            position: absolute;
-            top: 0;
-            right: 0;
-            background: rgba(0,0,0,0.3);
-            width: 40%;
-            padding: 10px;
-            margin-right: 1em;
-            margin-top: 1em;
     }
 }

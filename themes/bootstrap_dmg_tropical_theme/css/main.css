@@ -106,6 +106,14 @@ and open the template in the editor.
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active {
   background-color: #58b970; }
 
+#block-title {
+  height: 5em;
+  margin-left: -25px;
+  margin-right: -25px;
+  text-align: center;
+  background: #58b970;
+  color: #eeeeee; }
+
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -315,14 +323,17 @@ and open the template in the editor.
     Author     : theAdmin
 */
 .field.field--name-field-display-name.field--type-string.field--label-visually_hidden {
+  margin-left: -25px;
+  margin-right: -25px;
   background-color: #58b970;
   height: 100px;
   text-align: center;
-  vertical-align: center;
-  padding-top: 1%;
   margin-bottom: 20px; }
-  .field.field--name-field-display-name.field--type-string.field--label-visually_hidden h3 {
+  .field.field--name-field-display-name.field--type-string.field--label-visually_hidden h1 {
     color: #ffffff; }
+  .field.field--name-field-display-name.field--type-string.field--label-visually_hidden .field--item {
+    padding-top: 1%;
+    padding-bottom: 1%; }
 
 .field__items.testimonial-wrapper {
   clear: left;
@@ -362,7 +373,16 @@ and open the template in the editor.
   margin-bottom: 2em;
   border-radius: 200px; }
 
+/* About us Section */
+/* About us Section - the field*/
+.field.field--name-field-about-us-.field--type-text-long.field--label-hidden.field--item {
+  margin-top: 4em; }
+
 /* Map Section*/
+/* Map Section - the block that wraps around the contact form. */
+#block-contactblock {
+  margin-top: 4em; }
+
 /* Map Section - the wrapper around the google map iframe. */
 .g-map {
   width: 100%;
@@ -375,27 +395,79 @@ and open the template in the editor.
       height: 630px; } }
 
 /* Map Section - form*/
-#contact-message-feedback-form {
-  margin-top: 4em; }
-  @media (min-width: 47.5em) and (max-width: 70em) {
-    #contact-message-feedback-form {
-      position: absolute;
-      top: 0;
-      right: 0;
-      background: rgba(0, 0, 0, 0.3);
-      width: 40%;
-      padding: 10px;
-      margin-right: 1em;
-      margin-top: 1em; } }
-  @media (min-width: 70em) {
-    #contact-message-feedback-form {
-      position: absolute;
-      top: 0;
-      right: 0;
-      background: rgba(0, 0, 0, 0.3);
-      width: 40%;
-      padding: 10px;
-      margin-right: 1em;
-      margin-top: 1em; } }
+@media (min-width: 47.5em) and (max-width: 70em) {
+  #contact-message-reach-out-form {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    width: 40%;
+    padding: 10px; } }
+@media (min-width: 70em) {
+  #contact-message-reach-out-form {
+    margin-top: 4em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    width: 40%;
+    padding: 10px;
+    margin-right: 1em;
+    margin-top: 1em; } }
+
+/* 
+* /blog (blog all) - This is the page class on the /blog page where we aggregate blogs. 
+*/
+.blog-aggregation-view.views-row {
+  margin-bottom: 4em; }
+
+/* 
+* /blog (blog all) - header (injected with template views-view--blog--blog_all.html.twig)
+*/
+#blog-all-header {
+  margin-left: -25px;
+  margin-right: -25px;
+  background-color: #58b970;
+  margin-bottom: 4em;
+  text-align: center;
+  color: #eeeeee; }
+
+#blog-all-title {
+  padding-top: 1%; }
+
+#blog-all-side-title {
+  padding-bottom: 1%; }
+
+/*
+* /blog (blog all) - the title of the blog.
+*/
+.view-blog-title {
+  font-size: 1.4em; }
+
+/*
+* /blog (blog all) - author field.
+*/
+.view-blog-author {
+  font-size: .75em; }
+
+.view-blog-author::after {
+  content: '-'; }
+
+/*
+* /blog (blog all) - date field.
+*/
+.view-blog-date {
+  font-size: .75em; }
+
+.author.blog-author-date {
+  background-color: #58B970;
+  margin-left: -25px;
+  margin-right: -25px;
+  padding-bottom: 2em;
+  text-align: center;
+  margin-bottom: 4em; }
+
+.field.field--name-body.field--type-text-with-summary.field--label-hidden.field--item.quickedit-field {
+  margin-bottom: 4em; }
 
 /*# sourceMappingURL=main.css.map */

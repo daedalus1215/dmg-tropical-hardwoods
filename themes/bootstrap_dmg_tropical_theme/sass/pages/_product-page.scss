@@ -10,15 +10,20 @@ and open the template in the editor.
 */
 
 .field.field--name-field-display-name.field--type-string.field--label-visually_hidden {
+    margin-left: -25px;
+    margin-right: -25px;
     background-color: $action-color;
     height: 100px;
     text-align: center;
-    vertical-align: center;
-    padding-top: 1%; 
     margin-bottom: 20px;
     
-    h3 {
+    h1 {
         color: #ffffff;
+    }
+
+    .field--item {
+        padding-top: 1%;
+        padding-bottom: 1%;
     }
 }
 
