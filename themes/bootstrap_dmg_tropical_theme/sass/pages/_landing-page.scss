@@ -99,7 +99,7 @@ and open the template in the editor.
 /* Hero Section - Hero Jumbotron image */
 #landing_page_hero_jumbotron {
     margin-top: -75px; /* we want to pull the image to the top of the page */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/sites/default/files/landing_page/hero_image-1600x1000.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/sites/default/files/landing_page/hero_image-750x500.jpg);    
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -107,6 +107,11 @@ and open the template in the editor.
     /* make sure the hero image spans the length of the screen. */
     margin-right: -20px;
     margin-left: -20px;
+
+    @include respond-to(medium) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/sites/default/files/landing_page/hero_image-1600x1000.jpg);
+    }
+
 }
 
 
