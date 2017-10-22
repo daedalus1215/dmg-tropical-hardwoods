@@ -30,23 +30,21 @@ and open the template in the editor.
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 90%; // makes sure the display name recoils in, it sticks outside of the window - at certain widths,
+    position: absolute;
+    left: 50%;
+    top: 5%;
 
-    @include respond-to(large) {
-        position: absolute;
-        left: 60%;
-        top: 15%;        
-    }
 
     @include respond-to(medium) {
         position: absolute;
-        left: 60%;
-        top: 15%;        
+        right: 25em;
+        top: 15em;        
     }
 
-    @include respond-to(small) {
+    @include respond-to(large) {
         position: absolute;
-        left: 50%;
-        top: 5%;
+        right: 25em;
+        top: 15em;        
     }
 }
 
@@ -101,7 +99,7 @@ and open the template in the editor.
 /* Hero Section - Hero Jumbotron image */
 #landing_page_hero_jumbotron {
     margin-top: -75px; /* we want to pull the image to the top of the page */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/sites/default/files/landing_page/hero_image.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/sites/default/files/landing_page/hero_image-1600x1000.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -109,10 +107,6 @@ and open the template in the editor.
     /* make sure the hero image spans the length of the screen. */
     margin-right: -20px;
     margin-left: -20px;
-
-    @include respond-to(small) {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/sites/default/files/landing_page/hero_image-300x300.jpg);
-    }
 }
 
 

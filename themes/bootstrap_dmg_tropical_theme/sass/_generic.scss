@@ -35,7 +35,7 @@ and open the template in the editor.
         }
     }
     @else if $breakpoint == "medium" {
-        @media (min-width: 47.5em) and (max-width: 70em) {
+        @media (min-width: 47.1em) {
             @content;
         }
     }
