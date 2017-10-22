@@ -221,13 +221,21 @@ and open the template in the editor.
     width: 100%;
 }
 
-/* Product Display Name */
-.field.field--name-field-display-name.field--type-string.field--label-hidden.field--item {
-    display: inline-block; /* let's make the display name carry down to the next line. */
-
-    margin-bottom: .7em; /* Add some white space */
-    margin-top: .2em; /* Add some white space */
+.views-field.views-field-title.quality-title > span > a{
+    color: $secondary-primary-color;
+    transition: .5s linear;
 }
+
+.views-field.views-field-title.quality-title > span > a:hover {
+    color: $action-color;
+}
+
+.quality-bullets > ul > li {
+    list-style-type: none;
+    margin-left: -30px;
+}
+
+
 
 .quality {
     color: $action-color; /* Make the icons the appropriate color. */

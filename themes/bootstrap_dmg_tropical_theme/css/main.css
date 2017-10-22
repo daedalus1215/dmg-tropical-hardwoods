@@ -104,6 +104,12 @@ and open the template in the editor.
   border-radius: 0px; }
 
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active {
+  background-color: #dfb33b; }
+
+ul.menu.dropdown-menu li {
+  transition: .2s linear background-color; }
+
+ul.menu.dropdown-menu li > a:hover {
   background-color: #58b970; }
 
 #block-title {
@@ -112,7 +118,8 @@ and open the template in the editor.
   margin-right: -25px;
   text-align: center;
   background: #58b970;
-  color: #eeeeee; }
+  color: #eeeeee;
+  margin-bottom: 2em; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -289,14 +296,16 @@ and open the template in the editor.
 .field.field--name-field-product-images.field--type-image.field--label-hidden.col-md-4.product-front.field--item {
   width: 100%; }
 
-/* Product Display Name */
-.field.field--name-field-display-name.field--type-string.field--label-hidden.field--item {
-  display: inline-block;
-  /* let's make the display name carry down to the next line. */
-  margin-bottom: .7em;
-  /* Add some white space */
-  margin-top: .2em;
-  /* Add some white space */ }
+.views-field.views-field-title.quality-title > span > a {
+  color: #757575;
+  transition: .5s linear; }
+
+.views-field.views-field-title.quality-title > span > a:hover {
+  color: #58b970; }
+
+.quality-bullets > ul > li {
+  list-style-type: none;
+  margin-left: -30px; }
 
 .quality {
   color: #58b970;
@@ -322,34 +331,6 @@ and open the template in the editor.
     Created on : Sep 16, 2017, 12:35:57 PM
     Author     : theAdmin
 */
-.field.field--name-field-display-name.field--type-string.field--label-visually_hidden {
-  margin-left: -25px;
-  margin-right: -25px;
-  background-color: #58b970;
-  height: 100px;
-  text-align: center;
-  margin-bottom: 20px; }
-  .field.field--name-field-display-name.field--type-string.field--label-visually_hidden h1 {
-    color: #ffffff; }
-  .field.field--name-field-display-name.field--type-string.field--label-visually_hidden .field--item {
-    padding-top: 1%;
-    padding-bottom: 1%; }
-
-.field__items.testimonial-wrapper {
-  clear: left;
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/sites/default/files/products/the-sun-rises.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/sites/default/files/products/the-sun-rises.jpg);
-  background-size: cover;
-  color: #fff;
-  background-position: center;
-  background-attachment: fixed; }
-  @media (min-width: 47.5em) and (max-width: 70em) {
-    .field__items.testimonial-wrapper {
-      height: 300px; } }
-  @media (max-width: 47em) {
-    .field__items.testimonial-wrapper {
-      height: 500px; } }
-
 .paragraph.paragraph--type--testimonial.paragraph--view-mode--default blockquote {
   padding: 5px; }
 
@@ -463,6 +444,7 @@ and open the template in the editor.
   background-color: #58B970;
   margin-left: -25px;
   margin-right: -25px;
+  margin-top: -2em;
   padding-bottom: 2em;
   text-align: center;
   margin-bottom: 4em; }

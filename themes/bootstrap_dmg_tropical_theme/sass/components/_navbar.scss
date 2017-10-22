@@ -15,5 +15,13 @@ and open the template in the editor.
 
 
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active {
+    background-color: $secondary-action-color;
+}
+
+ul.menu.dropdown-menu li {
+    transition: .2s linear background-color;
+}
+
+ul.menu.dropdown-menu li > a:hover {
     background-color: $action-color;
 }
