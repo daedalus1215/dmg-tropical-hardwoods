@@ -54,32 +54,29 @@
   ]
 %}
 
-<div{{ attributes.setAttribute('id', 'landing_page_hero_jumbotron') }}></div>
-
-
 {% if label_hidden %}
-  {% if multiple %}
-    <div{{ attributes.addClass(classes, 'field--items').removeAttribute('id') }}>
-      {% for item in items %}
-        <div{{ item.attributes.addClass('field--item').removeAttribute('id') }}>{{ item.content }}</div>
-      {% endfor %}
-    </div>
-  {% else %}
-    {% for item in items %}
-      <div{{ attributes.addClass(classes, 'field--item').removeAttribute('id') }}>{{ item.content }}</div>
-    {% endfor %}
-  {% endif %}
+    {% if multiple %}
+        <div{{ attributes.addClass(classes, 'field--items').removeAttribute('id') }}>
+            {% for item in items %}
+                <div{{ item.attributes.addClass('field--item').removeAttribute('id') }}>{{ item.content }}</div>
+            {% endfor %}
+        </div>
+    {% else %}
+        {% for item in items %}
+            <div{{ attributes.addClass(classes, 'field--item').removeAttribute('id') }}>{{ item.content }}</div>
+        {% endfor %}
+    {% endif %}
 {% else %}
-  <div{{ attributes.addClass(classes) }}>
-    <div{{ title_attributes.addClass(title_classes).removeAttribute('id') }}>{{ label }}</div>
-    {% if multiple %}
-      <div class="field__items">
-    {% endif %}
-    {% for item in items %}
-      <div{{ item.attributes.addClass('field--item').removeAttribute('id') }}>{{ item.content }}</div>
-    {% endfor %}
-    {% if multiple %}
-      </div>
-    {% endif %}
-  </div>
+    <div{{ attributes.addClass(classes) }}>
+        <div{{ title_attributes.addClass(title_classes).removeAttribute('id') }}>{{ label }}</div>
+        {% if multiple %}
+            <div class="field__items">
+            {% endif %}
+            {% for item in items %}
+                <div{{ item.attributes.addClass('field--item').removeAttribute('id') }}>{{ item.content }}</div>
+            {% endfor %}
+            {% if multiple %}
+            </div>
+        {% endif %}
+    </div>
 {% endif %}

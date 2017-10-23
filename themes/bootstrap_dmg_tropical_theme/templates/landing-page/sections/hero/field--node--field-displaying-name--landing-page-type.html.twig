@@ -52,40 +52,48 @@
     label_display == 'visually_hidden' ? 'sr-only',
   ]
 %}
-
 {% set hero_button_wrapper_id = "hero-btns" %}
 {% set hero_product_btn = "hero-prd-btn" %}
-<div id="display-name-wrapper">
-<h1>
-{% if label_hidden %}
-  {% if multiple %}
-    <div{{ attributes.addClass(classes, 'field--items') }}>
-      {% for item in items %}
-        <div{{ item.attributes.addClass('field--item') }}>{{ item.content }}</div>
-      {% endfor %}
-    </div>
-  {% else %}
-    {% for item in items %}
-      <div{{ attributes.addClass(classes, 'field--item') }}>{{ item.content }}</div>
-    {% endfor %}
-  {% endif %}
-{% else %}
-  <div{{ attributes.addClass(classes) }}>
-    <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
-    {% if multiple %}
-      <div class="field__items">
-    {% endif %}
-    {% for item in items %}
-      <div{{ item.attributes.addClass('field--item') }}>{{ item.content }}</div>
-    {% endfor %}
-    {% if multiple %}
-      </div>
-    {% endif %}
-  </div>
-{% endif %}
-</h1>
-<div id="{{hero_button_wrapper_id}}">
-  <a type="button" id="{{hero_product_btn}}" class="hero-btn" href="#js--section-products">Products</a>
-  <a type="button" class="hero-btn" href="#js--section-benefits">Benefits</a>
+{% set hero_benefit_btn = "hero-ben-btn" %}
+
+
+<div id="hero-wrapper">
+    <div id='landing_page_hero_jumbotron'></div>
 </div>
+
+<div id="display-name-wrapper">
+<h1> 
+    {% if label_hidden %}
+        {% if multiple %}
+            <div{{ attributes.addClass(classes, 'field--items') }}>
+                {% for item in items %}
+                    <div{{ item.attributes.addClass('field--item') }}>{{ item.content }}</div>
+                {% endfor %}
+            </div>
+        {% else %}
+            {% for item in items %}
+                <div{{ attributes.addClass(classes, 'field--item') }}>{{ item.content }}</div>
+            {% endfor %}
+        {% endif %}
+    {% else %}
+        <div{{ attributes.addClass(classes) }}>
+            <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
+            {% if multiple %}
+                <div class="field__items">
+                {% endif %}
+                {% for item in items %}
+                    <div{{ item.attributes.addClass('field--item') }}>{{ item.content }}</div>
+                {% endfor %}
+                {% if multiple %}
+                </div>
+            {% endif %}
+        </div>
+    {% endif %}
+    </h1>
+    
+    <div id="{{hero_button_wrapper_id}}">
+        <a type="button" id="{{hero_product_btn}}" class="hero-btn" href="#js--section-products">Products</a>
+        <a type="button" id="{{ hero_benefit_btn }}" class="hero-btn" href="#js--section-benefits">Benefits</a>
+    </div>
+
 </div>
