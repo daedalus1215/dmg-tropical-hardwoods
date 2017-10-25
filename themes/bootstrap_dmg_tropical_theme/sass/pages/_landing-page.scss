@@ -33,7 +33,7 @@ and open the template in the editor.
     width: 90%; // makes sure the display name recoils in, it sticks outside of the window - at certain widths,
     position: absolute;
     left: 50%;
-    top: 8%;
+    top: 5%;
 
 
     @include respond-to(medium) {

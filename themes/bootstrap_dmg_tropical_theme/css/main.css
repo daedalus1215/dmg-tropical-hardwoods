@@ -110,7 +110,8 @@ ul.menu.dropdown-menu li {
   transition: .2s linear background-color; }
 
 ul.menu.dropdown-menu li > a:hover {
-  background-color: #58b970; }
+  background-color: #58b970;
+  color: #eeeeee; }
 
 #block-title {
   height: 5em;
@@ -150,7 +151,7 @@ and open the template in the editor.
   width: 90%;
   position: absolute;
   left: 50%;
-  top: 8%; }
+  top: 5%; }
   @media (min-width: 47.1em) {
     #display-name-wrapper {
       position: absolute;
@@ -378,7 +379,8 @@ and open the template in the editor.
 /* Map Section*/
 /* Map Section - the block that wraps around the contact form. */
 #block-contactblock {
-  margin-top: 4em; }
+  margin-top: 4em;
+  position: relative; }
 
 /* Map Section - the wrapper around the google map iframe. */
 .g-map {

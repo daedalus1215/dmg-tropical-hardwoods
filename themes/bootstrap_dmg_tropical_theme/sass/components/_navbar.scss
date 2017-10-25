@@ -24,4 +24,5 @@ ul.menu.dropdown-menu li {
 
 ul.menu.dropdown-menu li > a:hover {
     background-color: $action-color;
+    color: $inverse-primary-color;
 }
