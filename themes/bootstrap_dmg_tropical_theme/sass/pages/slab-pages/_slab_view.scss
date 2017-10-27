@@ -1,0 +1,22 @@
+
+/* Slabs View */
+.views-view-grid.horizontal.cols-4.clearfix {
+    margin-top: 4em; // Give us the customary space we need.
+}
+
+/* Slabs View - title */
+.views-field.views-field-title.slab-title {
+    display: none;
+
+    @include respond-to(medium) {
+        display:block;
+    }
+}
+
+.slab-row.views-row.clearfix.row-2 {
+    margin-top: 1em;
+    
+    @include respond-to(medium) {
+        margin-top: 0;
+    }
+}

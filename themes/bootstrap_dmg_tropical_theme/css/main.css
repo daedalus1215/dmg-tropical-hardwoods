@@ -470,4 +470,21 @@ and open the template in the editor.
 .field.field--name-body.field--type-text-with-summary.field--label-hidden.field--item.quickedit-field {
   margin-bottom: 4em; }
 
+/* Slabs View */
+.views-view-grid.horizontal.cols-4.clearfix {
+  margin-top: 4em; }
+
+/* Slabs View - title */
+.views-field.views-field-title.slab-title {
+  display: none; }
+  @media (min-width: 47.1em) {
+    .views-field.views-field-title.slab-title {
+      display: block; } }
+
+.slab-row.views-row.clearfix.row-2 {
+  margin-top: 1em; }
+  @media (min-width: 47.1em) {
+    .slab-row.views-row.clearfix.row-2 {
+      margin-top: 0; } }
+
 /*# sourceMappingURL=main.css.map */
