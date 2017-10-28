@@ -492,4 +492,10 @@ and open the template in the editor.
 .col-md-3.col-sm-3.col-xs-12.slab-row.views-row {
   margin-top: 1em; }
 
+@media (min-width: 47.1em) {
+  #contact-message-feedback-form {
+    width: 30em;
+    text-align: left;
+    margin: 4em auto; } }
+
 /*# sourceMappingURL=main.css.map */
