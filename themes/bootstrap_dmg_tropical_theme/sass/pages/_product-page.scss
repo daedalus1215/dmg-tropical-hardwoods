@@ -9,6 +9,10 @@ and open the template in the editor.
     Author     : theAdmin
 */
 
+.product-row.col-sm-3.col-xs-12.views-row {
+    margin-top: 1em;
+}
+
 .paragraph.paragraph--type--testimonial.paragraph--view-mode--default {
     blockquote {
         padding: 5px;
@@ -19,3 +23,14 @@ and open the template in the editor.
     text-align: right;
     margin-top: -20px;
 }
+
+.field.field--name-field-product-images.field--type-image.field--label-visually_hidden.col-md-4 > .field--item > .img-responsive {
+    width: 100%;
+    margin-top: 2em;
+
+    @include respond-to(medium) {
+        width: auto;
+        margin-top: 0;
+    }
+}
+
