@@ -103,6 +103,9 @@ and open the template in the editor.
     Created on : Sep 17, 2017, 12:12:24 PM
     Author     : theAdmin
 */
+#navrbar-collapse {
+  background-color: #ffffff; }
+
 #navbar.navbar-default.container-fluid {
   margin-bottom: 0px;
   border-radius: 0px; }
@@ -115,7 +118,10 @@ ul.menu.dropdown-menu li {
 
 ul.menu.dropdown-menu li > a:hover {
   background-color: #58b970;
-  color: #eeeeee; }
+  color: #ffffff; }
+
+nav#block-bootstrap-dmg-tropical-theme-footer.contextual-region ul.menu.nav li {
+  display: inline-block; }
 
 #block-title {
   height: 5em;
@@ -123,7 +129,7 @@ ul.menu.dropdown-menu li > a:hover {
   margin-right: -25px;
   text-align: center;
   background: #58b970;
-  color: #eeeeee;
+  color: #ffffff;
   margin-bottom: 2em; }
 
 /*
@@ -146,7 +152,7 @@ and open the template in the editor.
 /* Hero Section - The Display Name */
 #display-name-wrapper {
   z-index: 9;
-  color: #eeeeee;
+  color: #ffffff;
   /* since we will be text over dark background */
   width: 100%;
   -webkit-transform: translate(-50%, -50%);
@@ -187,7 +193,7 @@ and open the template in the editor.
   border: solid 1px;
   border-radius: 200px;
   padding: 10px 30px;
-  color: #eeeeee;
+  color: #ffffff;
   font-size: 105%;
   text-decoration: none;
   /* First we need to help some browsers along for this to work.
@@ -444,7 +450,7 @@ and open the template in the editor.
   background-color: #58b970;
   margin-bottom: 4em;
   text-align: center;
-  color: #eeeeee; }
+  color: #ffffff; }
 
 #blog-all-title {
   padding-top: 1%; }
@@ -497,5 +503,29 @@ and open the template in the editor.
     width: 30em;
     text-align: left;
     margin: 4em auto; } }
+
+/* Testimonials */
+/* Testimonials - the entire row (section) */
+#block-views-block-testimonial-view-block-1 {
+  margin-top: 4em;
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/sites/default/files/landing_page/the-sun-rises.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(/sites/default/files/the-sun-rises.jpg);
+  background-size: cover;
+  color: #fff;
+  background-position: center;
+  background-attachment: fixed; }
+
+/* 
+  Testimonials - each col in the row (not really the row, that 
+  is dictated by the view and the classes we set there, but inside 
+  of it, which both testimonials share). 
+*/
+.testimonial-type.teaser.clearfix {
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 40px; }
 
 /*# sourceMappingURL=main.css.map */

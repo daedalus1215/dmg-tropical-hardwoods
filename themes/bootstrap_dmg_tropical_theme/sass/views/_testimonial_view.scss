@@ -1,0 +1,26 @@
+/* Testimonials */
+
+/* Testimonials - the entire row (section) */
+#block-views-block-testimonial-view-block-1 {
+    margin-top: 4em;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/sites/default/files/landing_page/the-sun-rises.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.0)), url(/sites/default/files/the-sun-rises.jpg);
+    background-size: cover;
+    color: #fff;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* 
+  Testimonials - each col in the row (not really the row, that 
+  is dictated by the view and the classes we set there, but inside 
+  of it, which both testimonials share). 
+*/
+.testimonial-type.teaser.clearfix {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
