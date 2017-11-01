@@ -15,7 +15,8 @@ and open the template in the editor.
 
 @import 'components/_navbar';
 @import 'components/_footer_navbar';
-@import 'components/_block_title';
+@import 'block/_block_title';
+@import 'block/_ww2_landing_block';
 @import 'pages/_landing-page';
 @import 'pages/_product-page';
 @import 'pages/_about-page';
@@ -23,4 +24,4 @@ and open the template in the editor.
 @import 'pages/blog-pages/_blog-page';
 @import 'pages/slab-pages/_slab_view';
 @import 'pages/_feedback-contact';
-@import 'views/testimonial_view';
+@import 'views/_testimonial_view';

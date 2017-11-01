@@ -1,3 +1,17 @@
 nav#block-bootstrap-dmg-tropical-theme-footer.contextual-region ul.menu.nav li {
     display: inline-block;
 }
+
+footer.footer.container-fluid {
+    // background-color: $primary-color;
+    
+    nav#block-bootstrap-dmg-tropical-theme-footer > ul.menu.nav > li > a {
+        // color: white;
+        transition: color .2s linear;
+    }
+
+    nav#block-bootstrap-dmg-tropical-theme-footer > ul.menu.nav > li > a:hover {
+        background-color: white;
+        color: $secondary-action-color;
+    }
+}

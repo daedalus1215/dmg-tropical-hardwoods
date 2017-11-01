@@ -68,7 +68,7 @@ h2 {
   margin-bottom: 30px;
   letter-spacing: 1px; }
 
-h2:after {
+h2.underline:after {
   display: block;
   height: 2px;
   background-color: #58b970;
@@ -77,9 +77,6 @@ h2:after {
   margin: 0 auto;
   margin-top: 30px;
   transition: 1.5s width linear; }
-
-h2:hover::after {
-  width: 10em; }
 
 .mt-20 {
   margin-top: 20px; }
@@ -114,7 +111,7 @@ and open the template in the editor.
   background-color: #dfb33b; }
 
 ul.menu.dropdown-menu li {
-  transition: .2s linear background-color; }
+  transition: .2s linear background-color, .2s linear color; }
 
 ul.menu.dropdown-menu li > a:hover {
   background-color: #58b970;
@@ -122,6 +119,12 @@ ul.menu.dropdown-menu li > a:hover {
 
 nav#block-bootstrap-dmg-tropical-theme-footer.contextual-region ul.menu.nav li {
   display: inline-block; }
+
+footer.footer.container-fluid nav#block-bootstrap-dmg-tropical-theme-footer > ul.menu.nav > li > a {
+  transition: color .2s linear; }
+footer.footer.container-fluid nav#block-bootstrap-dmg-tropical-theme-footer > ul.menu.nav > li > a:hover {
+  background-color: white;
+  color: #dfb33b; }
 
 #block-title {
   height: 5em;
@@ -131,6 +134,27 @@ nav#block-bootstrap-dmg-tropical-theme-footer.contextual-region ul.menu.nav li {
   background: #58b970;
   color: #ffffff;
   margin-bottom: 2em; }
+
+#block-ww2landing {
+  margin-top: 4em;
+  height: 250px; }
+
+.ww2-row {
+  height: 100%; }
+
+.ww2-video {
+  height: 50%; }
+
+.ww2-promo {
+  height: 50%;
+  text-align: center;
+  margin-top: 1em; }
+
+.promo {
+  margin-left: 5px;
+  margin-right: 5px;
+  display: inline-block;
+  text-align: center; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -227,7 +251,7 @@ and open the template in the editor.
       display: inline; } }
 
 #hero-wrapper {
-  height: 100vh; }
+  height: 90vh; }
 
 /* Hero Section - Hero Jumbotron image */
 #landing_page_hero_jumbotron {
@@ -283,30 +307,6 @@ and open the template in the editor.
   display: block;
   color: #58b970;
   margin-bottom: 10px; }
-
-/* Testimonials */
-/* Testimonials - the entire row (section) */
-#block-views-block-testimonial-view-block-1 {
-  margin-top: 4em;
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/sites/default/files/landing_page/the-sun-rises.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(/sites/default/files/the-sun-rises.jpg);
-  background-size: cover;
-  color: #fff;
-  background-position: center;
-  background-attachment: fixed; }
-
-/* 
-  Testimonials - each col in the row (not really the row, that 
-  is dictated by the view and the classes we set there, but inside 
-  of it, which both testimonials share). 
-*/
-.testimonial-type.teaser.clearfix {
-  padding: 2%;
-  font-style: italic;
-  line-height: 145%;
-  position: relative;
-  margin-top: 40px;
-  margin-bottom: 40px; }
 
 /* Quad Product Landing Page section */
 /* Block that all 4 Quad Product Landing Page section sits. */
