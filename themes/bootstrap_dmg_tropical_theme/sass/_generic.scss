@@ -1,41 +1,23 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Sep 9, 2017, 10:29:19 AM
-    Author     : theAdmin
-*/
-
-// @mixin respond-to($breakpoint) {
-//     @if $breakpoint == "small" {
-//         @media (max-width: 767px) {
-//             @content;
-//         }
-//     }
-//     @else if $breakpoint == "medium" {
-//         @media (min-width: 767px) and (max-width: 992px) {
-//             @content;
-//         }
-//     }
-//     @else if $breakpoint == "large" {
-//         @media (min-width: 992px)  {
-//             @content;
-//         }
-//     }
-  
-// }
-
 
 @mixin respond-to($breakpoint) {
+    @if $breakpoint == "extra-small" {
+        @media (min-width: 33em) {
+            @content;
+        }
+    }
     @if $breakpoint == "small" {
-        @media (max-width: 47em) {
+        @media (min-width: 46.9em) {
             @content;
         }
     }
     @else if $breakpoint == "medium" {
-        @media (min-width: 47.1em) {
+        @media (min-width: 47em) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "medium-large" {
+        @media (min-width: 48em) {
             @content;
         }
     }

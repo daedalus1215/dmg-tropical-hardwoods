@@ -44,15 +44,6 @@ and open the template in the editor.
     Created on : Sep 9, 2017, 10:23:27 AM
     Author     : theAdmin
 */
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Sep 9, 2017, 10:29:19 AM
-    Author     : theAdmin
-*/
 body {
   font-family: "Lato", "Arial", sans-serif;
   color: #1c1c1c;
@@ -137,24 +128,53 @@ footer.footer.container-fluid nav#block-bootstrap-dmg-tropical-theme-footer > ul
 
 #block-ww2landing {
   margin-top: 4em;
-  height: 250px; }
+  height: 275px; }
 
 .ww2-row {
-  height: 100%; }
+  height: 50%; }
+  @media (min-width: 48em) {
+    .ww2-row {
+      height: 100%; } }
 
 .ww2-video {
-  height: 50%; }
+  height: 100%;
+  margin-left: -25px;
+  margin-right: -25px;
+  max-width: 544px; }
+  @media (min-width: 33em) {
+    .ww2-video {
+      margin-left: auto;
+      margin-right: auto; } }
 
 .ww2-promo {
   height: 50%;
   text-align: center;
   margin-top: 1em; }
+  @media (min-width: 48em) {
+    .ww2-promo {
+      position: relative;
+      top: 3em; } }
 
 .promo {
-  margin-left: 5px;
-  margin-right: 5px;
   display: inline-block;
-  text-align: center; }
+  text-align: center;
+  color: #58b970;
+  width: 31%; }
+  @media (min-width: 33em) {
+    .promo {
+      margin-left: 1em;
+      margin-right: 1em;
+      width: initial; } }
+  @media (min-width: 46.9em) {
+    .promo {
+      margin-left: 0; } }
+  .promo .promo-icon {
+    color: rgba(0, 0, 0, 0.35);
+    font-size: 1.4em; }
+  .promo .promo-text {
+    font-size: .75em; }
+  .promo .promo-check {
+    font-size: 1.4em; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -186,7 +206,7 @@ and open the template in the editor.
   position: absolute;
   left: 50%;
   top: 5%; }
-  @media (min-width: 47.1em) {
+  @media (min-width: 47em) {
     #display-name-wrapper {
       position: absolute;
       right: 25em;
@@ -198,7 +218,7 @@ and open the template in the editor.
       top: 15em; } }
 
 /* Hero Section - Display Name */
-@media (min-width: 47.1em) {
+@media (min-width: 47em) {
   .field.field--name-field-displaying-name.field--type-text.field--label-hidden.field--item {
     font-size: 200%; } }
 .field.field--name-field-displaying-name.field--type-text.field--label-hidden.field--item h1 {
@@ -239,14 +259,14 @@ and open the template in the editor.
 #hero-prd-btn {
   margin-right: 1em;
   display: inline-block; }
-  @media (min-width: 47.1em) {
+  @media (min-width: 47em) {
     #hero-prd-btn {
       display: inline; } }
 
 #hero-ben-btn {
   display: inline-block;
   margin-top: 1%; }
-  @media (min-width: 47.1em) {
+  @media (min-width: 47em) {
     #hero-ben-btn {
       display: inline; } }
 
@@ -267,7 +287,7 @@ and open the template in the editor.
   /* make sure the hero image spans the length of the screen. */
   margin-right: -20px;
   margin-left: -20px; }
-  @media (min-width: 47.1em) {
+  @media (min-width: 47em) {
     #landing_page_hero_jumbotron {
       background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/sites/default/files/landing_page/hero_image-1600x1000.jpg);
       background-attachment: fixed;
@@ -344,7 +364,7 @@ and open the template in the editor.
   /* Make sure text color is set back to original (overriding .quality) */
   padding-left: .5em;
   /* Give it some room from the icon. */ }
-  @media (min-width: 47.1em) {
+  @media (min-width: 47em) {
     .quality .quality-text {
       font-size: 80%; } }
 
@@ -371,7 +391,7 @@ and open the template in the editor.
 .field.field--name-field-product-images.field--type-image.field--label-visually_hidden.col-md-4 > .field--item > .img-responsive {
   width: 100%;
   margin-top: 2em; }
-  @media (min-width: 47.1em) {
+  @media (min-width: 47em) {
     .field.field--name-field-product-images.field--type-image.field--label-visually_hidden.col-md-4 > .field--item > .img-responsive {
       width: auto;
       margin-top: 0; } }
@@ -407,7 +427,7 @@ and open the template in the editor.
 .g-map {
   width: 100%;
   height: 100vh; }
-  @media (min-width: 47.1em) {
+  @media (min-width: 47em) {
     .g-map {
       height: 630px; } }
   @media (min-width: 70em) {
@@ -415,7 +435,7 @@ and open the template in the editor.
       height: 630px; } }
 
 /* Map Section - form*/
-@media (min-width: 47.1em) {
+@media (min-width: 47em) {
   #contact-message-reach-out-form {
     position: absolute;
     top: 0;
@@ -498,7 +518,7 @@ and open the template in the editor.
 .col-md-3.col-sm-3.col-xs-12.slab-row.views-row {
   margin-top: 1em; }
 
-@media (min-width: 47.1em) {
+@media (min-width: 47em) {
   #contact-message-feedback-form {
     width: 30em;
     text-align: left;
