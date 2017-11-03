@@ -1,5 +1,8 @@
-#block-ww2landing {
+.custom-title {
     margin-top: 4em;
+}
+
+#block-ww2landing {
     height: 275px;
 }
 
@@ -16,15 +19,19 @@
     margin-left: -25px;
     margin-right: -25px;
     max-width: 544px;
-    float:right;
     
+
     @include respond-to("extra-small") {
         margin-left: auto;
         margin-right: auto;
     }
 
+    @include respond-to("medium-large") {
+        float:right;
+    }
+
     @include respond-to("large-small") {
-        
+        right: 4em;
     }
 }
 
@@ -39,9 +46,16 @@
     }
 }
 
+
+.promo-row {
+    @include respond-to("large-small") {
+        padding-right: 4em;  
+    }
+}
+
 .promo {
     display: inline-block;
-    text-align: center;
+    text-align: center; 
     color: $action-color;
     width: 31%;
 
@@ -55,6 +69,10 @@
         margin-left: 0;
     }
 
+    @include respond-to("medium-large") {
+        float:right;  
+    }
+    
     .promo-icon {
         color: rgba(0, 0, 0, 0.35);
         font-size: 1.4em;
