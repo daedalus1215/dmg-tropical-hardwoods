@@ -140,7 +140,8 @@ footer.footer.container-fluid nav#block-bootstrap-dmg-tropical-theme-footer > ul
   height: 100%;
   margin-left: -25px;
   margin-right: -25px;
-  max-width: 544px; }
+  max-width: 544px;
+  float: right; }
   @media (min-width: 33em) {
     .ww2-video {
       margin-left: auto;

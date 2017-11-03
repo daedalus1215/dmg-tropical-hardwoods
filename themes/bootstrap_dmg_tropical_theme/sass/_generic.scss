@@ -21,7 +21,13 @@
             @content;
         }
     }
-    
+
+    @else if $breakpoint == "large-small" {
+        @media (min-width: 63.75em) {
+            @content;
+        }
+    }
+
     @else if $breakpoint == "large" {
         @media (min-width: 70em)  {
             @content;
