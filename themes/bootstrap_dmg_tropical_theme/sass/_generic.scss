@@ -22,6 +22,12 @@
         }
     }
 
+    @else if $breakpoint == "medium-xtra-large" {
+        @media (min-width: 60.93em) {
+            @content;
+        }
+    }
+
     @else if $breakpoint == "large-small" {
         @media (min-width: 63.75em) {
             @content;
@@ -86,4 +92,31 @@ h2.underline:after {
 
 .small-icon {
     font-size: $small-icon;
+}
+
+.center {
+    text-align: center;
+}
+
+
+.mt-3em {
+    margin-top: 3em;
+}
+
+.medium-mt-3em {
+    margin-top: 3em;
+    @include respond-to("medium-xtra-large") {
+        margin-top: 0;
+    }
+}
+
+.mb-3em {
+    margin-bottom: 3em;
+}
+
+.medium-mb-3em {
+    margin-bottom: 3em;
+    @include respond-to("medium-xtra-large") {
+        margin-bottom: 0;
+    }
 }

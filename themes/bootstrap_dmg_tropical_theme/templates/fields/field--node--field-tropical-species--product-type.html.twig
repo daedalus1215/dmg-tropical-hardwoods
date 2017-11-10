@@ -49,36 +49,43 @@
 {%
   set title_classes = [
     'field--label',
-    'center',
     label_display == 'visually_hidden' ? 'sr-only',
   ]
 %}
 
-{% if label_hidden %}    
-  {% if multiple %}
-    <div{{ attributes.addClass(classes, 'field--items') }}>
-      {% for item in items %}
-        <div{{ item.attributes.addClass('field--item') }}>{{ item.content }}</div>
-      {% endfor %}
-    </div>
-  {% else %}
-    {% for item in items %}
-      <div{{ attributes.addClass(classes, 'field--item') }}>{{ item.content }}</div>
-    {% endfor %}
-  {% endif %}
-{% else %}
+<ul>
+  {% if label_hidden %}
 
-  <div{{ attributes.addClass(classes) }}>
-    <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
+  <div class="tropical-species-row">
+    <div class="col-xs-12">
+      <h4>Tropical Species</h4>
+    </div>
+    <div class="col-xs-12">
     {% if multiple %}
-      <div class="field__items testimonial-wrapper">
-      <h3 class="center">Testimonials</h3>
-    {% endif %}
-    {% for item in items %}
-      <div{{ item.attributes.addClass('field--item') }}>{{ item.content }}</div>
-    {% endfor %}
-    {% if multiple %}
+      <div{{ attributes.addClass(classes, 'field--items') }}>
+        {% for item in items %}
+          <li><div{{ item.attributes.addClass('field--item') }}>{{ item.content }}</div></li>
+        {% endfor %}
       </div>
+    {% else %}
+      {% for item in items %}
+        <li><div{{ attributes.addClass(classes, 'field--item') }}>{{ item.content }}</div></li>
+      {% endfor %}
     {% endif %}
-  </div>
-{% endif %}
+    {% else %}
+      <div{{ attributes.addClass(classes) }}>
+        <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
+        {% if multiple %}
+          <div class="field__items">
+        {% endif %}
+        {% for item in items %}
+          <li><div{{ item.attributes.addClass('field--item') }}>{{ item.content }}</div></li>
+        {% endfor %}
+        {% if multiple %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+    </div>
+  {% endif %}
+</ul>      

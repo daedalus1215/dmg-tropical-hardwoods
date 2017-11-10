@@ -33,7 +33,7 @@ and open the template in the editor.
     width: 90%; // makes sure the display name recoils in, it sticks outside of the window - at certain widths,
     position: absolute;
     left: 50%;
-    top: 5%;
+    top: 10em;
 
 
     @include respond-to(medium) {
@@ -63,6 +63,11 @@ and open the template in the editor.
         word-spacing: 4px;
         letter-spacing: 1px;
     }     
+}
+
+/* Hero Section - Display Name - side title */
+#landing-side-title {
+    font-size: .85em;
 }
 
 

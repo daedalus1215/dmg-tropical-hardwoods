@@ -1,0 +1,54 @@
+{# DMG Decking Product Page #}
+{%
+  set classes = [
+    node.bundle|clean_class,
+    node.isPromoted() ? 'is-promoted',
+    node.isSticky() ? 'is-sticky',
+    not node.isPublished() ? 'is-unpublished',
+    view_mode ? view_mode|clean_class,
+    'clearfix',
+    'dmg-decking'
+  ]
+%}
+
+<article>
+  <div class="custom-title">
+    <h2 class="underline">Good enough for US Navy, Good enough for you</h2>
+  </div>
+  <section id="block-ww2landing">
+    <div class="row ww2-row">            
+      <div class="ww2-video col-sm-6"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/eCQeNERAiBk" frameborder="0" allowfullscreen></iframe></div>
+      <div class="ww2-promo col-sm-6">    
+        <div class="promo-row row">       
+          <div class="promo col-sm-4"><span class="promo-icon"><i class="glyphicon glyphicon-leaf"></i></span>  <span class="promo-text"><br/>Fungal <br/> Resistant</span> <br/>   <span class="promo-check"><i class="glyphicon glyphicon-ok"></i></div>
+          <div class="promo col-sm-4"><span class="promo-icon"><i class="glyphicon glyphicon-scale"></i></span> <span class="promo-text"><br/>Naval <br/> Grade     </span> <br/>   <span class="promo-check"><i class="glyphicon glyphicon-ok"></i></div>
+          <div class="promo col-sm-4"><span class="promo-icon"><i class="glyphicon glyphicon-fire"></i></span>  <span class="promo-text"><br/>Fire <br/> Resistant  </span> <br/>   <span class="promo-check"><i class="glyphicon glyphicon-ok"></i></div>
+        </div>
+      </div>
+      </div>
+  </section>            
+</article>
+<article{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {% if not page %}
+    <h2{{ title_attributes }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h2>
+  {% endif %}
+  {{ title_suffix }}
+
+  {% if display_submitted %}
+    <footer>
+      {{ author_picture }}
+      <div{{ author_attributes.addClass('author') }}>
+        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+        {{ metadata }}
+      </div>
+    </footer>
+  {% endif %}
+
+  <div{{ content_attributes.addClass('content') }}>
+    {{ content }}
+  </div>
+
+</article>

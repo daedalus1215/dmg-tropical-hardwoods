@@ -16,9 +16,13 @@ and open the template in the editor.
 @import 'components/_navbar';
 @import 'components/_footer_navbar';
 @import 'block/_block_title';
-@import 'block/_ww2_landing_block';
+
 @import 'pages/_landing-page';
+
 @import 'pages/_product-page';
+@import 'pages/_product-ww2-article';
+@import 'pages/_product-dmg-decking-page';
+
 @import 'pages/_about-page';
 @import 'pages/blog-pages/_blog_all-page';
 @import 'pages/blog-pages/_blog-page';

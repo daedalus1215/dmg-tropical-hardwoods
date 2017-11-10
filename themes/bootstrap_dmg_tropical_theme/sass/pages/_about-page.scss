@@ -1,24 +1,4 @@
 
-/* Employee Section. */
-
-/* Employee Section - the overall view */
-.paragraph.paragraph--type--employee.paragraph--view-mode--default {
-    text-align: center; // center all text
-    background-color: $action-color;
-    padding: 2em; // padding around the section
-    margin-left: -25px; // make sure the left side expands to edge of window
-    margin-right: -25px; // make sure the right side expands to edge of window
-}
-
-/* Employee Section - employee image */
-.field.field--name-field-employee-image.field--type-image.field--label-hidden.field--item .img-responsive {
-    margin-left: auto; // centers image
-    margin-right: auto; // centers image
-    margin-bottom: 2em; // give us space between quote and image
-    border-radius: 200px; // border around the image to make it a circle.
-}
-
-
 
 /* About us Section */
 
@@ -26,12 +6,6 @@
 .field.field--name-field-about-us-.field--type-text-long.field--label-hidden.field--item {
     margin-top: 4em;
 }
-
-
-
-
-
-
 
 
 /* Map Section*/
