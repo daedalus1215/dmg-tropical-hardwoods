@@ -257,14 +257,14 @@ and open the template in the editor.
   left: 0;
   background-position: 50%;
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/sites/default/files/landing_page/hero_image-320x480.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/sites/default/files/landing_page/landing_image1600x800.jpg);
   height: 90vh;
   /* make sure the hero image spans the length of the screen. */
   margin-right: -20px;
   margin-left: -20px; }
   @media (min-width: 47em) {
     #landing_page_hero_jumbotron {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/sites/default/files/landing_page/hero_image-1600x1000.jpg);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/sites/default/files/landing_page/landing_image1600x800.jpg);
       background-attachment: fixed;
       background-position: center; } }
 
@@ -554,28 +554,26 @@ and open the template in the editor.
     text-align: left;
     margin: 4em auto; } }
 
-/* Testimonials */
-/* Testimonials - the entire row (section) */
-#block-views-block-testimonial-view-block-1 {
-  margin-top: 4em;
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/sites/default/files/landing_page/the-sun-rises.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(/sites/default/files/the-sun-rises.jpg);
-  background-size: cover;
-  color: #fff;
-  background-position: center;
-  background-attachment: fixed; }
+.view-testimonial.contextual-region.view.view-testimonial-view.view-id-testimonial_view.view-display-id-block_1 {
+  font-size: .75em;
+  text-align: center;
+  margin-top: 3em; }
 
-/* 
-  Testimonials - each col in the row (not really the row, that 
-  is dictated by the view and the classes we set there, but inside 
-  of it, which both testimonials share). 
-*/
-.testimonial-type.teaser.clearfix {
-  padding: 2%;
-  font-style: italic;
-  line-height: 145%;
-  position: relative;
-  margin-top: 40px;
-  margin-bottom: 40px; }
+.views-field.views-field-field-quoted-by {
+  display: inline-block; }
+  .views-field.views-field-field-quoted-by .field-content.testimonial-view-quote-by {
+    display: inline-block; }
+
+.views-field.views-field-field-quoted-by::after {
+  display: inline-block;
+  content: "-";
+  margin: 0 .5em; }
+
+.views-field.views-field-field-date-given {
+  display: inline-block; }
+
+.views-field.views-field-body {
+  margin-top: .4em;
+  margin-bottom: 2em; }
 
 /*# sourceMappingURL=main.css.map */

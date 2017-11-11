@@ -56,10 +56,9 @@
 
 
 <section{{ attributes.addClass(classes) }}>
-    <h2>Our Customers are seasoned lobstermen that know our Hardwoods are the best</h2>
   {{ title_prefix }}
   {% if label %}
-    <h2{{ title_attributes.addClass('block-title') }}>{{ label }}</h2>
+    <h2{{ title_attributes.addClass('block-title', 'underline') }}>{{ label }}</h2>
   {% endif %}
   {{ title_suffix }}
 

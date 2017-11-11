@@ -1,26 +1,58 @@
-/* Testimonials */
+// /* Testimonials */
 
-/* Testimonials - the entire row (section) */
-#block-views-block-testimonial-view-block-1 {
-    margin-top: 4em;
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/sites/default/files/landing_page/the-sun-rises.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.0)), url(/sites/default/files/the-sun-rises.jpg);
-    background-size: cover;
-    color: #fff;
-    background-position: center;
-    background-attachment: fixed;
+// /* Testimonials - the entire row (section) */
+// #block-views-block-testimonial-view-block-1 {
+//     margin-top: 4em;
+//     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/sites/default/files/landing_page/the-sun-rises.jpg);
+//     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.0)), url(/sites/default/files/the-sun-rises.jpg);
+//     background-size: cover;
+//     color: #fff;
+//     background-position: center;
+//     background-attachment: fixed;
+// }
+
+// /* 
+//   Testimonials - each col in the row (not really the row, that 
+//   is dictated by the view and the classes we set there, but inside 
+//   of it, which both testimonials share). 
+// */
+// .testimonial-type.teaser.clearfix {
+//     padding: 2%;
+//     font-style: italic;
+//     line-height: 145%;
+//     position: relative;
+//     margin-top: 40px;
+//     margin-bottom: 40px;
+// }
+
+
+.view-testimonial.contextual-region.view.view-testimonial-view.view-id-testimonial_view.view-display-id-block_1 {
+    font-size: .75em; // cut down on the text size.
+    text-align: center; // get everything centered
+    margin-top: 3em; // space from the title
 }
 
-/* 
-  Testimonials - each col in the row (not really the row, that 
-  is dictated by the view and the classes we set there, but inside 
-  of it, which both testimonials share). 
-*/
-.testimonial-type.teaser.clearfix {
-    padding: 2%;
-    font-style: italic;
-    line-height: 145%;
-    position: relative;
-    margin-top: 40px;
-    margin-bottom: 40px;
+
+// wrapper around Quote By
+.views-field.views-field-field-quoted-by {
+    display: inline-block; // want quote by and date given to line up
+
+    .field-content.testimonial-view-quote-by {
+        display: inline-block; // want quote by and date given to line up
+    }
+}
+
+.views-field.views-field-field-quoted-by::after {
+    display: inline-block;
+    content: "-"; // we want to seperate the two fields.
+    margin: 0 .5em;
+}
+
+.views-field.views-field-field-date-given {
+    display:inline-block; // want quote by and date given to line up
+}
+
+.views-field.views-field-body {
+    margin-top: .4em; // give some space between the body and the other 2 fields.
+    margin-bottom: 2em; // give some space between the testimonials as the screen shrinks into a phone view.
 }
