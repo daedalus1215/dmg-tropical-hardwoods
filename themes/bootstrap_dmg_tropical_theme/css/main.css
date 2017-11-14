@@ -44,8 +44,10 @@ and open the template in the editor.
     Created on : Sep 9, 2017, 10:23:27 AM
     Author     : theAdmin
 */
+* {
+  font-family: "Open Sans", Arial, sans-serif; }
+
 body {
-  font-family: "Lato", "Arial", sans-serif;
   color: #1c1c1c;
   font-size: 20px; }
 
