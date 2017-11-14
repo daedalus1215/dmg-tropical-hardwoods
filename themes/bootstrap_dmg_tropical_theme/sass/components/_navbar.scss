@@ -31,3 +31,19 @@ ul.menu.dropdown-menu li > a:hover {
     background-color: $action-color;
     color: $inverse-primary-color;
 }
+
+#navbar-icon {
+    width: 1.5em;
+    position: relative;
+    top: .5em;
+    right: -.5em;
+
+    @include respond-to("medium") {
+        top: -.5em;
+        right: 0;
+    }   
+}
+
+#navbar-icon::after {
+    content: "DMG";
+}

@@ -131,6 +131,19 @@ ul.menu.dropdown-menu li > a:hover {
   background-color: #58b970;
   color: #ffffff; }
 
+#navbar-icon {
+  width: 1.5em;
+  position: relative;
+  top: .5em;
+  right: -.5em; }
+  @media (min-width: 47em) {
+    #navbar-icon {
+      top: -.5em;
+      right: 0; } }
+
+#navbar-icon::after {
+  content: "DMG"; }
+
 nav#block-bootstrap-dmg-tropical-theme-footer.contextual-region ul.menu.nav li {
   display: inline-block; }
 
