@@ -48,7 +48,7 @@ and open the template in the editor.
   font-family: "Open Sans", Arial, sans-serif; }
 
 body {
-  color: #1c1c1c;
+  color: #292929;
   font-size: 20px; }
 
 h1, h2, h3 {
@@ -115,7 +115,7 @@ and open the template in the editor.
     Author     : theAdmin
 */
 #navrbar-collapse {
-  background-color: #ffffff; }
+  background-color: rgba(255, 255, 255, 0.95); }
 
 #navbar.navbar-default.container-fluid {
   margin-bottom: 0px;
@@ -129,7 +129,7 @@ ul.menu.dropdown-menu li {
 
 ul.menu.dropdown-menu li > a:hover {
   background-color: #58b970;
-  color: #ffffff; }
+  color: rgba(255, 255, 255, 0.95); }
 
 #navbar-icon {
   width: 1.5em;
@@ -144,14 +144,32 @@ ul.menu.dropdown-menu li > a:hover {
 #navbar-icon::after {
   content: "DMG"; }
 
-nav#block-bootstrap-dmg-tropical-theme-footer.contextual-region ul.menu.nav li {
-  display: inline-block; }
-
-footer.footer.container-fluid nav#block-bootstrap-dmg-tropical-theme-footer > ul.menu.nav > li > a {
-  transition: color .2s linear; }
-footer.footer.container-fluid nav#block-bootstrap-dmg-tropical-theme-footer > ul.menu.nav > li > a:hover {
-  background-color: white;
-  color: #dfb33b; }
+footer.footer.container-fluid {
+  font-size: .65em;
+  background-color: #292929; }
+  footer.footer.container-fluid nav#block-bootstrap-dmg-tropical-theme-footer {
+    padding-top: 3em; }
+  footer.footer.container-fluid .footer-wrapper {
+    padding-top: 2em;
+    border-top: 1px solid rgba(255, 255, 255, 0.95); }
+    footer.footer.container-fluid .footer-wrapper nav#block-bootstrap-dmg-tropical-theme-footer {
+      border-top: 1px rgba(255, 255, 255, 0.95) solid; }
+    footer.footer.container-fluid .footer-wrapper ul.menu.nav > li {
+      display: inline-block;
+      padding: 0 .5em; }
+    footer.footer.container-fluid .footer-wrapper ul.menu.nav > li:first-child {
+      border-right: 1px dotted rgba(255, 255, 255, 0.95); }
+    footer.footer.container-fluid .footer-wrapper ul.menu.nav > li > a {
+      transition: color .2s linear, border-bottom-color .2s linear;
+      text-decoration: none;
+      border-bottom: 1px dotted rgba(255, 255, 255, 0.95);
+      border-bottom-color: rgba(255, 255, 255, 0.95);
+      padding: 0 1em;
+      color: rgba(255, 255, 255, 0.95); }
+    footer.footer.container-fluid .footer-wrapper ul.menu.nav > li > a:hover {
+      color: #58b970;
+      background-color: #292929;
+      border-bottom-color: #58b970; }
 
 #block-title {
   height: 5em;
@@ -159,7 +177,7 @@ footer.footer.container-fluid nav#block-bootstrap-dmg-tropical-theme-footer > ul
   margin-right: -25px;
   text-align: center;
   background: #58b970;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.95);
   margin-bottom: 2em; }
 
 /*
@@ -182,7 +200,7 @@ and open the template in the editor.
 /* Hero Section - The Display Name */
 #display-name-wrapper {
   z-index: 9;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.95);
   /* since we will be text over dark background */
   width: 100%;
   -webkit-transform: translate(-50%, -50%);
@@ -227,7 +245,7 @@ and open the template in the editor.
   border: solid 1px;
   border-radius: 200px;
   padding: 10px 30px;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.95);
   font-size: 105%;
   text-decoration: none;
   /* First we need to help some browsers along for this to work.
@@ -348,7 +366,7 @@ and open the template in the editor.
 
 /* The Quality points of the product. */
 .quality .quality-text {
-  color: #1c1c1c;
+  color: #292929;
   /* Make sure text color is set back to original (overriding .quality) */
   padding-left: .5em;
   /* Give it some room from the icon. */ }
@@ -515,7 +533,7 @@ and open the template in the editor.
   background-color: #58b970;
   margin-bottom: 4em;
   text-align: center;
-  color: #ffffff; }
+  color: rgba(255, 255, 255, 0.95); }
 
 #blog-all-title {
   padding-top: 1%; }
@@ -569,6 +587,10 @@ and open the template in the editor.
     text-align: left;
     margin: 4em auto; } }
 
+.view-testimonial.view.view-testimonial-view.view-id-testimonial_view.view-display-id-block_1 {
+  font-size: .75em;
+  text-align: center; }
+
 .view-testimonial.contextual-region.view.view-testimonial-view.view-id-testimonial_view.view-display-id-block_1 {
   font-size: .75em;
   text-align: center;
@@ -589,6 +611,7 @@ and open the template in the editor.
 
 .views-field.views-field-body {
   margin-top: .4em;
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+  text-align: left; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,17 +1,45 @@
-nav#block-bootstrap-dmg-tropical-theme-footer.contextual-region ul.menu.nav li {
-    display: inline-block;
-}
-
 footer.footer.container-fluid {
-    // background-color: $primary-color;
-    
-    nav#block-bootstrap-dmg-tropical-theme-footer > ul.menu.nav > li > a {
-        // color: white;
-        transition: color .2s linear;
+    font-size: .65em;
+    background-color: $primary-color;
+
+    nav#block-bootstrap-dmg-tropical-theme-footer {
+        padding-top: 3em;
     }
 
-    nav#block-bootstrap-dmg-tropical-theme-footer > ul.menu.nav > li > a:hover {
-        background-color: white;
-        color: $secondary-action-color;
+    .footer-wrapper {
+        padding-top: 2em;
+        border-top: 1px solid $inverse-primary-color;
+
+        nav#block-bootstrap-dmg-tropical-theme-footer {
+            border-top: 1px $inverse-primary-color solid;
+        }
+    
+        ul.menu.nav > li {
+            display: inline-block;        
+            padding: 0 .5em;
+        }
+    
+        ul.menu.nav > li:first-child {
+            border-right: 1px dotted $inverse-primary-color;
+        }
+    
+        ul.menu.nav > li > a {
+            // color: white;
+            transition: color .2s linear, border-bottom-color .2s linear;
+            text-decoration: none;
+            border-bottom: 1px dotted $inverse-primary-color;
+            border-bottom-color: $inverse-primary-color;  
+            padding: 0 1em;
+            color: $inverse-primary-color;            
+        }
+    
+        ul.menu.nav > li > a:hover {
+            color: $action-color;
+            background-color: $primary-color;
+            border-bottom-color: $action-color;
+        }
     }
 }
+
+
+
