@@ -49,9 +49,20 @@ and open the template in the editor.
     }
 }
 
+#header-icon {
+    display: none;
+    @include respond-to("large-xtra-large") {
+        display: inline-block;
+        width: 150px;
+        position: relative;
+        bottom: 4em;
+    }
+}
 
 /* Hero Section - Display Name */
 .field.field--name-field-displaying-name.field--type-text.field--label-hidden.field--item {    
+    display:inline-block;
+
     @include respond-to(medium) {
         font-size: 200%;
     }
@@ -99,6 +110,10 @@ and open the template in the editor.
 .hero-btn:hover {
     text-decoration: none;
     color: $action-color;
+}
+
+.hero-btn:active {
+    text-decoration: none;
 }
 
 /* Hero Section - Individual Product Button */

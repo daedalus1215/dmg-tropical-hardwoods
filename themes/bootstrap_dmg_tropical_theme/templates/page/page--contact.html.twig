@@ -57,7 +57,6 @@
  */
 
 #}
-
 {% set url = (base_path ~ 'sites/default/files/icon.svg') %}
 
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
@@ -165,8 +164,19 @@
         {% endif %}
 
         {# Content #}
-        {% block content %}
-          <a id="main-content"></a>
+        {% block content %}    
+        <a id="main-content"></a>
+          <section id="block-title" class="clearfix">
+            <h1>
+              <span id="block-title-content">
+                <span>Contact Us</span>
+              </span>
+            </h1>
+          </section>
+          <div id="contact-visitor-message" class="mt-4em">
+            <span id="contact-visitor-message-1"><h2>Want to place an order or quote?<h2></span>
+            <span id="contact-visitor-message-2"><h3>Have a comment or concern?<h3></span>
+          </div>      
           {{ page.content }}
         {% endblock %}
       </section>

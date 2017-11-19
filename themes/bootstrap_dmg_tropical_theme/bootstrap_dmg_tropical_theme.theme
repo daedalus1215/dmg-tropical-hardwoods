@@ -31,3 +31,14 @@
 //        $variables['#cache']['contexts'][] = 'url.path';
 //    }
 //  }
+
+
+
+// function bootstrap_dmg_tropical_theme_page__contact(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+    
+//     if (in_array($form_id, ['contact_message_feedback_form', ])) {
+//         $key = ($form_id == 'contact_message_feedback_form') ? 'action' : 'basic';
+//         $form[$key]['visitor-message-1']['#value'] = 'Want to place an order or quote?';       
+//         $form[$key]['visitor-message-2']['#value'] = 'Have a comment or concern?';       
+//     }
+// }

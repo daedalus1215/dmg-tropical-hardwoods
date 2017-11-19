@@ -53,7 +53,12 @@
   ]
 %}
 
-
+{%
+  set tropical_classes = [
+    'col-sm-4',
+    'mt-4em'
+  ]
+%}
 {% if label_hidden %}    
   {% if multiple %}          
     <div class="tropical-species-row">
@@ -70,7 +75,7 @@
     </div> <!-- tropical-species-row -->
   {% else %}
     <div class="tropical-species-row">
-      <div class="col-sm-4">
+      <div class="col-sm-4 mt-4em">
         <h4>Tropical Species</h4>
         <ul>
           {% for item in items %}
@@ -88,7 +93,7 @@
       <div class="field__items">
     {% endif %}
    <div class="tropical-species-row">
-      <div class="col-sm-4">
+      <div {{ attributes.addClass(tropical_classes) }}>
         <h4>Tropical Species</h4>
         <ul>    
           {% for item in items %}

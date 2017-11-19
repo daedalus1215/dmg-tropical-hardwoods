@@ -71,6 +71,16 @@ h2.underline:after {
   margin-top: 30px;
   transition: 1.5s width linear; }
 
+h3.underline:after {
+  display: block;
+  height: 2px;
+  background-color: #58b970;
+  content: " ";
+  width: 6.25em;
+  margin: 0 auto;
+  margin-top: 30px;
+  transition: 1.5s width linear; }
+
 .mt-20 {
   margin-top: 20px; }
 
@@ -87,8 +97,14 @@ h2.underline:after {
 .center {
   text-align: center; }
 
+.mt-4em {
+  margin-top: 4em; }
+
 .mt-3em {
   margin-top: 3em; }
+
+.mr-15px {
+  margin-right: 15px; }
 
 .medium-mt-3em {
   margin-top: 3em; }
@@ -114,7 +130,7 @@ and open the template in the editor.
     Created on : Sep 17, 2017, 12:12:24 PM
     Author     : theAdmin
 */
-#navrbar-collapse {
+#navbar-collapse {
   background-color: rgba(255, 255, 255, 0.95); }
 
 #navbar.navbar-default.container-fluid {
@@ -221,16 +237,27 @@ and open the template in the editor.
       right: 25em;
       top: 15em; } }
 
+#header-icon {
+  display: none; }
+  @media (min-width: 76em) {
+    #header-icon {
+      display: inline-block;
+      width: 150px;
+      position: relative;
+      bottom: 4em; } }
+
 /* Hero Section - Display Name */
-@media (min-width: 47em) {
-  .field.field--name-field-displaying-name.field--type-text.field--label-hidden.field--item {
-    font-size: 200%; } }
-.field.field--name-field-displaying-name.field--type-text.field--label-hidden.field--item h1 {
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-size: 240%;
-  word-spacing: 4px;
-  letter-spacing: 1px; }
+.field.field--name-field-displaying-name.field--type-text.field--label-hidden.field--item {
+  display: inline-block; }
+  @media (min-width: 47em) {
+    .field.field--name-field-displaying-name.field--type-text.field--label-hidden.field--item {
+      font-size: 200%; } }
+  .field.field--name-field-displaying-name.field--type-text.field--label-hidden.field--item h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px; }
 
 /* Hero Section - Display Name - side title */
 #landing-side-title {
@@ -262,6 +289,9 @@ and open the template in the editor.
 .hero-btn:hover {
   text-decoration: none;
   color: #58b970; }
+
+.hero-btn:active {
+  text-decoration: none; }
 
 /* Hero Section - Individual Product Button */
 #hero-prd-btn {
@@ -586,6 +616,13 @@ and open the template in the editor.
     width: 30em;
     text-align: left;
     margin: 4em auto; } }
+
+div#contact-visitor-message {
+  text-align: center; }
+  div#contact-visitor-message #contact-visitor-message-1 {
+    display: block; }
+  div#contact-visitor-message #contact-visitor-message-2 {
+    display: block; }
 
 .view-testimonial.view.view-testimonial-view.view-id-testimonial_view.view-display-id-block_1 {
   font-size: .75em;

@@ -62,17 +62,18 @@
 </div>
 
 <div id="display-name-wrapper">
-<h1> 
+<img id="header-icon" src="{{ 'sites/default/files/icon.svg' }}"></img>
+
     {% if label_hidden %}
         {% if multiple %}
             <div{{ attributes.addClass(classes, 'field--items') }}>
                 {% for item in items %}
-                    <div{{ item.attributes.addClass('field--item') }}>{{ item.content }}</div>
+                    <div{{ item.attributes.addClass('field--item') }}><h1>{{ item.content }}</h1></div>
                 {% endfor %}
             </div>
         {% else %}
             {% for item in items %}
-                <div{{ attributes.addClass(classes, 'field--item') }}>{{ item.content }}</div>
+                <div{{ attributes.addClass(classes, 'field--item') }}><h1>{{ item.content }}</h1></div>
             {% endfor %}
         {% endif %}
     {% else %}
@@ -82,14 +83,13 @@
                 <div class="field__items">
                 {% endif %}
                 {% for item in items %}
-                    <div{{ item.attributes.addClass('field--item') }}>{{ item.content }}</div>
+                    <div{{ item.attributes.addClass('field--item') }}><h1>{{ item.content }}</h1></div>
                 {% endfor %}
                 {% if multiple %}
                 </div>
             {% endif %}
         </div>
     {% endif %}
-    </h1>
     
     <div id="{{hero_button_wrapper_id}}">
         <a type="button" id="{{hero_product_btn}}" class="hero-btn" href="#js--section-products">Products</a>
