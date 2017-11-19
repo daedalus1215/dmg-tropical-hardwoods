@@ -152,7 +152,7 @@ ul.menu.dropdown-menu li > a:hover {
   position: relative;
   top: .5em;
   right: -.5em; }
-  @media (min-width: 47em) {
+  @media (min-width: 48em) {
     #navbar-icon {
       top: -.5em;
       right: 0; } }

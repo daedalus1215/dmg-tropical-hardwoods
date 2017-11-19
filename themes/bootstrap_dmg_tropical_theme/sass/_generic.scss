@@ -5,11 +5,19 @@
             @content;
         }
     }
-    @if $breakpoint == "small" {
+
+    @else if $breakpoint == "smaller" {
+        @media (min-width: 45em) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "small" {
         @media (min-width: 46.9em) {
             @content;
         }
     }
+
     @else if $breakpoint == "medium" {
         @media (min-width: 47em) {
             @content;
