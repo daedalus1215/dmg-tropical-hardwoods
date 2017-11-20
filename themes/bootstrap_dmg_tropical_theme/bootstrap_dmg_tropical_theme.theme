@@ -1,7 +1,5 @@
 <?php
 
-
-
 /**
  * @file
  * Bootstrap sub-theme.
@@ -42,3 +40,12 @@
 //         $form[$key]['visitor-message-2']['#value'] = 'Have a comment or concern?';       
 //     }
 // }
+
+
+
+function bootstrap_dmg_tropical_theme_preprocess_block(array &$variables) {
+    if ($variables['elements']['#id'] == 'customfooter') {
+        $host = \Drupal::request()->getSchemeAndHttpHost();
+        $variables['content']['host'] = $host;
+    }    
+}

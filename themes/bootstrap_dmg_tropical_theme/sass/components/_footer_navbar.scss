@@ -1,17 +1,18 @@
 footer.footer.container-fluid {
     font-size: .65em;
     background-color: $primary-color;
-
-    nav#block-bootstrap-dmg-tropical-theme-footer {
-        padding-top: 3em;
-    }
+    height: 220px;
 
     .footer-wrapper {
         padding-top: 2em;
-        border-top: 1px solid $inverse-primary-color;
+
+        span#contact-options {
+            color: $secondary-primary-color;
+        }
 
         nav#block-bootstrap-dmg-tropical-theme-footer {
-            border-top: 1px $inverse-primary-color solid;
+            padding-top: 3em;
+            border-top: 1px $secondary-primary-color solid;
         }
     
         ul.menu.nav > li {
@@ -20,23 +21,41 @@ footer.footer.container-fluid {
         }
     
         ul.menu.nav > li:first-child {
-            border-right: 1px dotted $inverse-primary-color;
+            border-right: 1px dotted $secondary-primary-color;
         }
     
         ul.menu.nav > li > a {
             // color: white;
             transition: color .2s linear, border-bottom-color .2s linear;
             text-decoration: none;
-            border-bottom: 1px dotted $inverse-primary-color;
-            border-bottom-color: $inverse-primary-color;  
+            border-bottom: 1px dotted $secondary-primary-color;
+            border-bottom-color: $secondary-primary-color;  
             padding: 0 1em;
-            color: $inverse-primary-color;            
+            color: $secondary-primary-color;            
         }
     
         ul.menu.nav > li > a:hover {
             color: $action-color;
             background-color: $primary-color;
             border-bottom-color: $action-color;
+        }
+
+        /* For some reason I need to make sure that I include the link specifically. */
+        ul.menu.nav > li > a#footer-contact:hover {
+            color: $action-color;
+            background-color: $primary-color;
+            border-bottom-color: $action-color;
+        }
+
+        ul.menu.nav > li > a:active {
+            color: $secondary-action-color;
+            background-color: $primary-color;
+            border-bottom-color: $secondary-action-color;
+        }
+        ul.menu.nav > li > a:visited {
+            color: $secondary-primary-color;
+            background-color: $primary-color;
+            border-bottom-color: $secondary-primary-color;
         }
     }
 }
