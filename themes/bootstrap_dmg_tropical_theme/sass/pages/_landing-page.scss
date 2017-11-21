@@ -88,33 +88,34 @@ and open the template in the editor.
 }
 
 /* Hero Section - Individual Buttons */
-.hero-btn {
-    border: solid 1px;
-    border-radius: 200px;
+a.hero-btn {    
+    border-radius: 6px;    
     padding: 10px 30px;
-    color: $inverse-primary-color;
     font-size: 105%;
-    text-decoration: none;
-    /* First we need to help some browsers along for this to work.
-     Just because a vendor prefix is there, doesn't mean it will
-     work in a browser made by that vendor either, it's just for
-     future-proofing purposes I guess. */
+    /* 
+        First we need to help some browsers along for this to work.
+        Just because a vendor prefix is there, doesn't mean it will
+        work in a browser made by that vendor either, it's just for
+        future-proofing purposes I guess. 
+     */
   -o-transition:.2s;
   -ms-transition:.2s;
   -moz-transition:.2s;
   -webkit-transition:.2s;
-  /* ...and now for the proper property */
-  transition: color .2s linear;
+    transition: background-color .2s linear, border .2s linear;
+
+    text-decoration: none;
+    border: solid 1px $action-color;
+    color: $inverse-primary-color;
+    background-color: $action-color;
 }
 
-.hero-btn:hover {
+a.hero-btn:hover {
     text-decoration: none;
-    color: $action-color;
+    background-color: $hover-color;
+    border: solid 1px $hover-color;   
 }
 
-.hero-btn:active {
-    text-decoration: none;
-}
 
 /* Hero Section - Individual Product Button */
 #hero-prd-btn {

@@ -168,8 +168,7 @@ footer.footer.container-fluid {
   background-color: #292929;
   height: 220px; }
   footer.footer.container-fluid .footer-wrapper {
-    padding-top: 2em;
-    /* For some reason I need to make sure that I include the link specifically. */ }
+    padding-top: 2em; }
     footer.footer.container-fluid .footer-wrapper span#contact-options {
       color: #757575; }
     footer.footer.container-fluid .footer-wrapper nav#block-bootstrap-dmg-tropical-theme-footer {
@@ -184,14 +183,9 @@ footer.footer.container-fluid {
       transition: color .2s linear, border-bottom-color .2s linear;
       text-decoration: none;
       border-bottom: 1px dotted #757575;
-      border-bottom-color: #757575;
       padding: 0 1em;
-      color: #757575; }
+      color: rgba(255, 255, 255, 0.95); }
     footer.footer.container-fluid .footer-wrapper ul.menu.nav > li > a:hover {
-      color: #58b970;
-      background-color: #292929;
-      border-bottom-color: #58b970; }
-    footer.footer.container-fluid .footer-wrapper ul.menu.nav > li > a#footer-contact:hover {
       color: #58b970;
       background-color: #292929;
       border-bottom-color: #58b970; }
@@ -200,9 +194,9 @@ footer.footer.container-fluid {
       background-color: #292929;
       border-bottom-color: #dfb33b; }
     footer.footer.container-fluid .footer-wrapper ul.menu.nav > li > a:visited {
-      color: #757575;
+      color: rgba(255, 255, 255, 0.95);
       background-color: #292929;
-      border-bottom-color: #757575; }
+      border-bottom-color: rgba(255, 255, 255, 0.95); }
 
 #block-title {
   height: 5em;
@@ -285,30 +279,30 @@ and open the template in the editor.
   margin-top: 2em; }
 
 /* Hero Section - Individual Buttons */
-.hero-btn {
-  border: solid 1px;
-  border-radius: 200px;
+a.hero-btn {
+  border-radius: 6px;
   padding: 10px 30px;
-  color: rgba(255, 255, 255, 0.95);
   font-size: 105%;
-  text-decoration: none;
-  /* First we need to help some browsers along for this to work.
-   Just because a vendor prefix is there, doesn't mean it will
-   work in a browser made by that vendor either, it's just for
-   future-proofing purposes I guess. */
+  /* 
+      First we need to help some browsers along for this to work.
+      Just because a vendor prefix is there, doesn't mean it will
+      work in a browser made by that vendor either, it's just for
+      future-proofing purposes I guess. 
+   */
   -o-transition: .2s;
   -ms-transition: .2s;
   -moz-transition: .2s;
   -webkit-transition: .2s;
-  /* ...and now for the proper property */
-  transition: color .2s linear; }
-
-.hero-btn:hover {
+  transition: background-color .2s linear, border .2s linear;
   text-decoration: none;
-  color: #58b970; }
+  border: solid 1px #58b970;
+  color: rgba(255, 255, 255, 0.95);
+  background-color: #58b970; }
 
-.hero-btn:active {
-  text-decoration: none; }
+a.hero-btn:hover {
+  text-decoration: none;
+  background-color: #1D8538;
+  border: solid 1px #1D8538; }
 
 /* Hero Section - Individual Product Button */
 #hero-prd-btn {

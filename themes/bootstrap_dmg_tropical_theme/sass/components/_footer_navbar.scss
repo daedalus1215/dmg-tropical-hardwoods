@@ -29,9 +29,8 @@ footer.footer.container-fluid {
             transition: color .2s linear, border-bottom-color .2s linear;
             text-decoration: none;
             border-bottom: 1px dotted $secondary-primary-color;
-            border-bottom-color: $secondary-primary-color;  
             padding: 0 1em;
-            color: $secondary-primary-color;            
+            color: $inverse-primary-color;            
         }
     
         ul.menu.nav > li > a:hover {
@@ -40,12 +39,6 @@ footer.footer.container-fluid {
             border-bottom-color: $action-color;
         }
 
-        /* For some reason I need to make sure that I include the link specifically. */
-        ul.menu.nav > li > a#footer-contact:hover {
-            color: $action-color;
-            background-color: $primary-color;
-            border-bottom-color: $action-color;
-        }
 
         ul.menu.nav > li > a:active {
             color: $secondary-action-color;
@@ -53,9 +46,9 @@ footer.footer.container-fluid {
             border-bottom-color: $secondary-action-color;
         }
         ul.menu.nav > li > a:visited {
-            color: $secondary-primary-color;
+            color: $inverse-primary-color;
             background-color: $primary-color;
-            border-bottom-color: $secondary-primary-color;
+            border-bottom-color: $inverse-primary-color;
         }
     }
 }
