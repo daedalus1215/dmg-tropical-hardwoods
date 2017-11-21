@@ -3,8 +3,12 @@
 }
 
 #block-ww2landing {
-    height: 275px;
+    height: 550px;
     margin-bottom: 4em;
+
+    @include respond-to("medium-large") {
+        height: 300px;
+    }
 }
 
 .ww2-row {
@@ -37,9 +41,9 @@
 }
 
 .ww2-promo {
-    height: 50%;
+    // height: 50%;
     text-align: center;
-    margin-top: 1em;  
+    margin-top: 4em;  
     
     @include respond-to("medium-large") {
         position: relative;

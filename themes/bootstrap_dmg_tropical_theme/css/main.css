@@ -447,8 +447,11 @@ and open the template in the editor.
   margin-top: 4em; }
 
 #block-ww2landing {
-  height: 275px;
+  height: 550px;
   margin-bottom: 4em; }
+  @media (min-width: 48em) {
+    #block-ww2landing {
+      height: 300px; } }
 
 .ww2-row {
   height: 50%; }
@@ -473,9 +476,8 @@ and open the template in the editor.
       right: 4em; } }
 
 .ww2-promo {
-  height: 50%;
   text-align: center;
-  margin-top: 1em; }
+  margin-top: 4em; }
   @media (min-width: 48em) {
     .ww2-promo {
       position: relative;
