@@ -1,0 +1,28 @@
+/* Hero Section - Individual Buttons */
+.btn-primary.btn {    
+    border-radius: 6px;    
+    padding: 10px 30px;
+    font-size: 105%;
+    /* 
+        First we need to help some browsers along for this to work.
+        Just because a vendor prefix is there, doesn't mean it will
+        work in a browser made by that vendor either, it's just for
+        future-proofing purposes I guess. 
+     */
+  -o-transition:.2s;
+  -ms-transition:.2s;
+  -moz-transition:.2s;
+  -webkit-transition:.2s;
+    transition: background-color .2s linear, border .2s linear;
+
+    text-decoration: none;
+    border: solid 1px $action-color;
+    color: $inverse-primary-color;
+    background-color: $action-color;
+}
+
+.btn-primary.btn:hover {
+    text-decoration: none;
+    background-color: $hover-color;
+    border: solid 1px $hover-color;   
+}
