@@ -54,7 +54,7 @@ function bootstrap_dmg_tropical_theme_preprocess_block(array &$variables) {
 /**
  * Implements hook_theme_suggestions_page() to set 40x template suggestions
  */
-function bootstrap_dmg_tropical_theme_suggestions_content_alter(array &$suggestions, array &$variables) {
+function bootstrap_dmg_tropical_theme_theme_suggestions_page_alter(array &$suggestions, array $variables) {
 //    $path_args = explode('/', trim(\Drupal::service('path.current')->getPath(), '/'));
 //    $suggestions = theme_get_suggestions($path_args, 'page');
 //    $http_error_suggestions = [
@@ -67,6 +67,25 @@ function bootstrap_dmg_tropical_theme_suggestions_content_alter(array &$suggesti
 //      $suggestions[] = $http_error_suggestions[$route_name];
 //    }
 //    return $suggestions;
-    $request = \Drupal::routeMatch();
-    kint($request);
+    $urlRequestPath = \Drupal::routeMatch()->getRouteObject()->getPath();
+    
+    if (isErrorPath($urlRequestPath)) {
+        $suggestions[] = '404-error-page';
+    }
+    
+//    kint($request);
+    return $suggestions;
+}
+
+/**
+ * @param string $urlRequestPath
+ * @return boolean: true if the url requested is a 404 one.
+ */
+function isErrorPath($urlRequestPath)
+{
+    if ($urlRequestPath === '/system/404') {
+        return true;
+    }
+    
+    return false;
 }
