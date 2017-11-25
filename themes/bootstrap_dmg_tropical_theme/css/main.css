@@ -206,7 +206,6 @@ footer.footer.container-fluid {
 .btn-primary.btn {
   border-radius: 6px;
   padding: 10px 30px;
-  font-size: 105%;
   /* 
       First we need to help some browsers along for this to work.
       Just because a vendor prefix is there, doesn't mean it will

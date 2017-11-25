@@ -1,0 +1,8 @@
+## YAML Template.
+
+name: ErrorPageModule
+description: 'Error Page Module for displaying the error page. Provides a controller.'
+type: module
+core: 8.x
+version: 0.1-dev
+package: ErrorPageModule

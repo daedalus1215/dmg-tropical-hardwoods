@@ -1,0 +1,9 @@
+## YAML Template.
+---
+ErrorPageModule.system.404:
+  path: '/system/404'
+  defaults:
+    _controller: '\Drupal\ErrorPageModule\Controller\MyErrorPage::on404'
+    _title: 'Page not found - 404'
+  requirements:
+    _access: 'TRUE'

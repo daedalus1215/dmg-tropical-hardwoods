@@ -49,3 +49,24 @@ function bootstrap_dmg_tropical_theme_preprocess_block(array &$variables) {
         $variables['content']['host'] = $host;
     }    
 }
+
+
+/**
+ * Implements hook_theme_suggestions_page() to set 40x template suggestions
+ */
+function bootstrap_dmg_tropical_theme_suggestions_content_alter(array &$suggestions, array &$variables) {
+//    $path_args = explode('/', trim(\Drupal::service('path.current')->getPath(), '/'));
+//    $suggestions = theme_get_suggestions($path_args, 'page');
+//    $http_error_suggestions = [
+//      'system.401' => 'page__401',
+//      'system.403' => 'page__403',
+//      'system.404' => 'page__404',
+//    ];
+//    $route_name = \Drupal::routeMatch()->getRouteName();
+//    if (isset($http_error_suggestions[$route_name])) {
+//      $suggestions[] = $http_error_suggestions[$route_name];
+//    }
+//    return $suggestions;
+    $request = \Drupal::routeMatch();
+    kint($request);
+}
