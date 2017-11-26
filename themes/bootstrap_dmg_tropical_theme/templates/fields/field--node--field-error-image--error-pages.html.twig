@@ -53,6 +53,9 @@
   ]
 %}
 
+
+
+
 {% if label_hidden %}
   {% if multiple %}
     <div{{ attributes.addClass(classes, 'field--items') }}>
@@ -60,18 +63,18 @@
         <div{{ item.attributes.addClass('field--item') }}>{{ item.content }}</div>
       {% endfor %}
 
-      <div class="404-resource-wrapper">
-        <ul class="404-resource-ul">
-          <li class="404-resource-li">
-          {# @todo: we are going to put our items here. Style this correctly, then get this block of code in every spot it needs to on the page. #}
-          </li>
-        </ul>
-      </div>
+{# Doubt there will be multiple images on the error page.  #}
+
+
     </div>
   {% else %}
     {% for item in items %}
       <div{{ attributes.addClass(classes, 'field--item') }}>{{ item.content }}</div>
     {% endfor %}
+
+
+{# Doubt there will be multiple images on the error page.  #}
+
   {% endif %}
 {% else %}
   <div{{ attributes.addClass(classes) }}>
@@ -82,6 +85,30 @@
     {% for item in items %}
       <div{{ item.attributes.addClass('field--item') }}>{{ item.content }}</div>
     {% endfor %}
+
+
+      <div class="404-resource-wrapper">
+      <h2 class="404-resource-h2">Here are some useful options</h2>
+        <ul class="404-resource-ul">
+          <li class="404-resource-li">             
+             <a href="tel:5555555555">Call us (555) 555-555</a>                                            
+          </li>
+          <li class="404-resource-li">
+            <a href="{{ content.host ~ '/product/dmg-live-edge-wood' }}">Check out Live Edge Wood Slabs</a>
+          </li>
+          <li class="404-resource-li">
+            <a href="{{ content.host ~ '/blog' }}">Blog</a>
+            </li>
+          <li class="404-resource-li">
+            <a href="{{ content.host ~ '/contact' }}">Message us</a>
+          </li>
+          <li class="404-resource-li">
+            <a href="{{ url('<front>') }}">Home</a>
+          </li>
+        </ul>
+      </div>
+
+
     {% if multiple %}
       </div>
     {% endif %}
