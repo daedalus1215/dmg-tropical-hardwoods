@@ -53,7 +53,7 @@
     label_display == 'visually_hidden' ? 'sr-only',
   ]
 %}
-
+<div class="error-page-body">
 {% if label_hidden %}
   {% if multiple %}
     <div{{ attributes.addClass(classes, 'field--items') }}>
@@ -73,10 +73,33 @@
       <div class="field__items">
     {% endif %}
     {% for item in items %}
-      <div{{ item.attributes.addClass('field--item') }}><h1>{{ item.content }}</h1></div>
+      <div{{ item.attributes.addClass('field--item', 'error-body-text') }}><h1>{{ item.content }}</h1></div>
     {% endfor %}
+
+    <div class="resource-wrapper mt-4em">
+      <h2 class="resource-h2">Here are some useful options</h2>
+        <ul class="resource-ul">
+          <li class="resource-li">             
+             <a href="tel:5555555555">Call us (555) 555-555</a>                                            
+          </li>
+          <li class="resource-li">
+            <a href="{{ content.host ~ '/product/dmg-live-edge-wood' }}">Check out Live Edge Wood Slabs</a>
+          </li>
+          <li class="resource-li">
+            <a href="{{ content.host ~ '/blog' }}">Blog</a>
+            </li>
+          <li class="resource-li">
+            <a href="{{ content.host ~ '/contact' }}">Message us</a>
+          </li>
+          <li class="resource-li">
+            <a href="{{ url('<front>') }}">Home</a>
+          </li>
+        </ul>
+      </div>
+    <div id="error-image"></div>
     {% if multiple %}
       </div>
     {% endif %}
   </div>
 {% endif %}
+</div>
