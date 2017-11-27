@@ -45,7 +45,8 @@
 /**
  * We want to grab a reference to the FQDN and send it down through to the template.
  */
-function bootstrap_dmg_tropical_theme_preprocess_block(array &$variables) {
+function bootstrap_dmg_tropical_theme_preprocess_block(array &$variables) 
+{
     if ($variables['elements']['#id'] == 'customfooter') {
         passFQDNtoTemplate($variables);
     }    
@@ -55,12 +56,16 @@ function bootstrap_dmg_tropical_theme_preprocess_block(array &$variables) {
 /**
  * We want to grab a reference to the FQDN and send it down through to the template.
  */
-function bootstrap_dmg_tropical_theme_preprocess_field(array &$variables, $hook) {
+function bootstrap_dmg_tropical_theme_preprocess_field(array &$variables, $hook) 
+{
         
         passFQDNtoTemplate($variables);
- 
 }
 
+function bootstrap_dmg_tropical_theme_preprocess_page(array &$variables)
+{
+    passFQDNtoTemplate($variables);
+}
 /**
  * Pass down the URL of the website to the template of choice.
  */

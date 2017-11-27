@@ -89,7 +89,7 @@
       {# {{ author_picture }} #}
       {% set createdDate = node.getCreatedTime|date('F m Y') %} 
       <div{{ author_attributes.addClass('author', 'blog-author-date') }}>
-        {% trans %} by {{ author_name }} - {{ createdDate }}{% endtrans %}
+        {% trans %} by {{ author_name|e }} - {{ createdDate|e }}{% endtrans %}
         {{ metadata }}
       </div>
     </footer>
