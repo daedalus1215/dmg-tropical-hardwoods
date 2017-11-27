@@ -1,0 +1,50 @@
+{# error node  #}
+{%
+  set classes = [
+    node.bundle|clean_class,
+    node.isPromoted() ? 'is-promoted',
+    node.isSticky() ? 'is-sticky',
+    not node.isPublished() ? 'is-unpublished',
+    view_mode ? view_mode|clean_class,
+    'clearfix',
+  ]
+%}
+<article{{ attributes.addClass(classes) }}>
+{% set url = (base_path ~ 'sites/default/files/icon.svg') %}
+<div class="row">
+  <div class="col-sm-12 no-padding">
+    <div class="field error-page-body">   
+
+      <div class="field--item error-body-text">
+        <h1>{{ "Sorry, a wrong turn was taken."|e }}</h1>
+      </div>
+
+      <div class="resource-wrapper mt-4em"> 
+        <h2 class="resource-h2">Here are some useful options</h2>
+        <ul class="resource-ul">                
+          <li class="resource-li">
+            <a href="{{ url('<front>') }}">{{ "Home"|e }}</a>
+          </li>            
+          <li class="resource-li"> 
+            <a href="tel:5555555555">{{ "Call us (555) 555-555"|e }}</a>                                            
+          </li>                  
+          <li class="resource-li">
+            <a href="{{ page.content.host ~ '/contact' }}">{{ "Message us"|e }}</a>
+          </li>
+          <li class="resource-li">
+            <a href="{{ page.content.host ~ '/product/dmg-live-edge-wood' }}">{{ "Check out Live Edge Wood Slabs"|e }}</a>
+          </li>
+          <li class="resource-li">
+            <a href="{{ page.content.host ~ '/blog' }}">{{ "Blog"|e }}</a>
+          </li>              
+          <li class="resource-li">
+            <a href="{{ page.content.host ~ '/history' }}">{{ "Locate us"|e }}</a>
+          </li>
+        </ul>
+      </div>
+
+    <div id="error-image"></div>
+  </div>
+</div>
+</div>
+</article>
