@@ -253,7 +253,11 @@ and open the template in the editor.
   padding: 1em;
   box-shadow: 0.5px 0.5px 10px rgba(117, 117, 117, 0.5); }
   .card__title {
-    margin-top: 1em; }
+    margin-top: 1em;
+    font-size: 80%; }
+    @media (min-width: 70em) {
+      .card__title {
+        font-size: 100%; } }
     .card__title > a {
       color: #757575;
       transition: .5s linear; }
