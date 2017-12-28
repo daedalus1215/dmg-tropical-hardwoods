@@ -1,0 +1,38 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 27, 2017, 11:49:28 AM
+    Author     : ladam
+*/
+
+
+
+.card {
+    text-align: center;
+    background-color: rgba($white-color, .95);
+    height: 250px;
+    margin-bottom: 1em;
+    padding: 1em;
+    box-shadow: .5px .5px 10px rgba($black-color, .5);
+    
+    &__title {
+        margin-top: 1em;
+
+        & > a {
+            color: $secondary-primary-color;
+            transition: .5s linear;
+
+            &:hover {
+                color: $action-color;
+            }
+        }
+    }
+
+    &__image > img {
+        margin: 0 auto;
+        margin-top: 1em;
+    }
+}

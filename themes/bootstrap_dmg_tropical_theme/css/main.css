@@ -116,6 +116,9 @@ h3.underline:after {
   .large-mt-4em {
     margin-top: 4em; } }
 
+.mb-2em {
+  margin-bottom: 2em; }
+
 .mb-3em {
   margin-bottom: 3em; }
 
@@ -124,6 +127,9 @@ h3.underline:after {
   @media (min-width: 60.93em) {
     .medium-mb-3em {
       margin-bottom: 0; } }
+
+.mb-6em {
+  margin-bottom: 6em; }
 
 .mr-15px {
   margin-right: 15px; }
@@ -230,12 +236,39 @@ footer.footer.container-fluid {
   background-color: #1D8538;
   border: solid 1px #1D8538; }
 
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 27, 2017, 11:49:28 AM
+    Author     : ladam
+*/
+.card {
+  text-align: center;
+  background-color: rgba(254, 254, 254, 0.95);
+  height: 250px;
+  margin-bottom: 1em;
+  padding: 1em;
+  box-shadow: 0.5px 0.5px 10px rgba(117, 117, 117, 0.5); }
+  .card__title {
+    margin-top: 1em; }
+    .card__title > a {
+      color: #757575;
+      transition: .5s linear; }
+      .card__title > a:hover {
+        color: #58b970; }
+  .card__image > img {
+    margin: 0 auto;
+    margin-top: 1em; }
+
 #block-title {
   height: 5em;
   margin-left: -25px;
   margin-right: -25px;
   text-align: center;
-  background: #58b970;
+  background: linear-gradient(#379F52, #58b970);
   color: rgba(255, 255, 255, 0.95);
   margin-bottom: 2em; }
 

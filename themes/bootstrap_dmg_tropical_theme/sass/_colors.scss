@@ -9,8 +9,19 @@ and open the template in the editor.
 */
 
 $primary-color: #292929;            // The main font color.
+
 $secondary-primary-color: #757575;  // shadow for widgets that work with main font color.
 $inverse-primary-color: rgba(255, 255, 255, 0.95);    // If the background is black instead of white we use this for main font color.
+
+$white-color: #fefefe;
+$black-color: $secondary-primary-color;
+
+
 $action-color: #58b970;             // The action color to draw people in.
-$hover-color: #1D8538;              // use for as the hover color of the action color.
+$action-light-color: #83D298;
+$action-dark-color: #379F52;
+$action-darker-color: #1D8538;
+
+$hover-color: $action-darker-color;              // use for as the hover color of the action color.
+
 $secondary-action-color: #dfb33b;   // Secondary action color that complements first and can also help highlight.

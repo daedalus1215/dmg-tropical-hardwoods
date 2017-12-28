@@ -3,7 +3,7 @@
     margin-left: -25px;
     margin-right: -25px;
     text-align: center;
-    background: $action-color;
+    background: linear-gradient($action-dark-color, $action-color);
     color: $inverse-primary-color;
     margin-bottom: 2em;
 }
