@@ -35,21 +35,28 @@
  *
  * @see template_preprocess_paragraph()
  *
+
+
+
  * @ingroup themeable
  */
 #}
+
 {%
   set classes = [
     'paragraph',
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
-    'card'
+    'card',
+    'position-relative'
   ]
 %}
-{% block paragraph %}
-  <div{{ attributes.addClass(classes) }}>
-    {% block content %}
-      {{ content }}
-    {% endblock %}
-  </div>
+{% block paragraph %}    
+    <div{{ attributes.addClass(classes) }}>
+        <a href="{{ content.uri_link }}"><span  class="card__background-link" ></span></a>
+        {% block content %}
+            {{ content }}
+        {% endblock %}
+    </div>
+
 {% endblock paragraph %}

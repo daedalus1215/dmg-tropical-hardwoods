@@ -57,9 +57,8 @@ function bootstrap_dmg_tropical_theme_preprocess_block(array &$variables)
  * We want to grab a reference to the FQDN and send it down through to the template.
  */
 function bootstrap_dmg_tropical_theme_preprocess_field(array &$variables, $hook) 
-{
-        
-        passFQDNtoTemplate($variables);
+{        
+    passFQDNtoTemplate($variables);
 }
 
 function bootstrap_dmg_tropical_theme_preprocess_page(array &$variables)
@@ -75,6 +74,21 @@ function passFQDNtoTemplate(&$variables)
     $variables['content']['host'] = $host;
 }
 
+
+/**
+* We want to grab the http link from the paragraph's website link, and
+* inject it onto the paragraph's level.
+*/
+function bootstrap_dmg_tropical_theme_preprocess_paragraph(&$variables) {
+	$paragraph = $variables['paragraph'];
+        $paragraphType = $paragraph->getType();
+     
+        if ($paragraphType === "dealer_paragraph") {
+            $linkItem = $paragraph->field_website_of_dealer->get(0);
+            $uri = $linkItem->uri;
+            $variables['content']['uri_link'] = $uri;
+        }     
+}
 
 
 

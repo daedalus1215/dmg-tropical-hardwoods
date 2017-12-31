@@ -3,8 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/xampp/htdocs/dmg/themes/bootstrap_dmg_tropical_theme/sass/block/_block_title.scss</file>
+            <file>file:/C:/xampp/htdocs/dmg/themes/bootstrap_dmg_tropical_theme/templates/fields/field--paragraph--field-dealer-logo.html.twig</file>
+            <file>file:/C:/xampp/htdocs/dmg/themes/bootstrap_dmg_tropical_theme/bootstrap_dmg_tropical_theme.info.yml</file>
+            <file>file:/C:/xampp/htdocs/dmg/themes/bootstrap_dmg_tropical_theme/bootstrap_dmg_tropical_theme.theme</file>
             <file>file:/C:/xampp/htdocs/dmg/themes/bootstrap_dmg_tropical_theme/sass/components/_card.scss</file>
+            <file>file:/C:/xampp/htdocs/dmg/themes/bootstrap_dmg_tropical_theme/templates/fields/field--paragraph--field-website-of-dealer.html.twig</file>
             <file>file:/C:/xampp/htdocs/dmg/themes/bootstrap_dmg_tropical_theme/templates/fields/field--node--dealer-content-type.html.twig</file>
+            <file>file:/C:/xampp/htdocs/dmg/themes/bootstrap_dmg_tropical_theme/sass/pages/_landing-page.scss</file>
+            <file>file:/C:/xampp/htdocs/dmg/themes/bootstrap_dmg_tropical_theme/sass/_colors.scss</file>
         </group>
     </open-files>
 </project-private>

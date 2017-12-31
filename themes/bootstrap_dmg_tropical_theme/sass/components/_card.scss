@@ -12,12 +12,33 @@ and open the template in the editor.
 
 .card {
     text-align: center;
+    position:relative; /* background is absolute, so need to set this to relative. */
     background-color: rgba($white-color, .95);
     height: 250px;
     margin-bottom: 1em;
     padding: 1em;
     box-shadow: .5px .5px 10px rgba($black-color, .5);
-
+    transform: scale(1);
+    
+    transition: all .2s;
+    
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: .6px .6px 11px rgba($black-color, .6)
+    }
+    
+    &__background-link {
+        // Came from: https://stackoverflow.com/questions/796087/make-a-div-into-a-link
+        position:absolute; 
+        width:100%;
+        height:100%;
+        top:0;
+        left: 0;
+        z-index: 1;
+        background-color: transparent;
+    }
+    
+    
     &__title {
         margin-top: 1em;
         font-size: 80%;
