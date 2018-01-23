@@ -44,6 +44,24 @@ and open the template in the editor.
     Created on : Sep 9, 2017, 10:23:27 AM
     Author     : theAdmin
 */
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 22, 2018, 10:04:32 PM
+    Author     : ladam
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 22, 2018, 9:48:49 PM
+    Author     : ladam
+*/
 * {
   font-family: "Open Sans", Arial, sans-serif; }
 
@@ -81,27 +99,34 @@ h3.underline:after {
   margin-top: 30px;
   transition: 1.5s width linear; }
 
-.mt-20 {
-  margin-top: 20px; }
-
-.p-50 {
-  padding: 50px; }
-
-#navbar {
-  margin-top: -16px;
-  z-index: 9; }
-
 .small-icon {
   font-size: 120%; }
 
 .center {
   text-align: center; }
 
+.mt-20 {
+  margin-top: 20px; }
+
+.p-50 {
+  padding: 50px; }
+
 .mt-1em {
   margin-top: 1em; }
 
 .mt-3em {
   margin-top: 3em; }
+
+.mt-4em {
+  margin-top: 4em; }
+
+.mb-4em {
+  margin-bottom: 4em; }
+
+.center-700 {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .medium-mt-3em {
   margin-top: 3em; }
@@ -146,8 +171,11 @@ and open the template in the editor.
     Created on : Sep 17, 2017, 12:12:24 PM
     Author     : theAdmin
 */
-#navbar-collapse {
-  background-color: rgba(255, 255, 255, 0.95); }
+#navbar {
+  margin-top: -16px;
+  z-index: 9; }
+  #navbar-collapse {
+    background-color: rgba(255, 255, 255, 0.95); }
 
 #navbar.navbar-default.container-fluid {
   margin-bottom: 0px;
@@ -281,6 +309,9 @@ and open the template in the editor.
   .card__image > img {
     margin: 0 auto;
     margin-top: 1em; }
+
+.add-content-list dd {
+  margin-bottom: 1.2em; }
 
 #block-title {
   height: 5em;

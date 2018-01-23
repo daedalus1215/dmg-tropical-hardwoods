@@ -7,10 +7,13 @@ and open the template in the editor.
     Created on : Sep 17, 2017, 12:12:24 PM
     Author     : theAdmin
 */
-
-#navbar-collapse {
-    background-color: $inverse-primary-color;
+#navbar {
+    margin-top: -16px;
+    z-index: 9;
     
+    &-collapse {
+        background-color: $inverse-primary-color;
+    }
 }
 
 #navbar.navbar-default.container-fluid {

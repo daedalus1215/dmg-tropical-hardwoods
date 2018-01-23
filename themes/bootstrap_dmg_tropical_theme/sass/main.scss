@@ -11,12 +11,16 @@ and open the template in the editor.
 @import '_fonts.scss';
 @import '_colors.scss';
 
-@import '_generic';
+@import 'abstract/mixins';
+@import 'abstract/utilities';
+
 
 @import 'components/_navbar';
 @import 'components/_footer_navbar';
 @import 'components/_action-buttons';
 @import 'components/_card';
+@import 'components/_add-content-list';
+
 
 @import 'block/_block_title';
 

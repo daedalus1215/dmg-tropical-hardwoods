@@ -1,0 +1,73 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 22, 2018, 10:04:32 PM
+    Author     : ladam
+*/
+
+
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == "extra-small" {
+        @media (min-width: 33em) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "smaller" {
+        @media (min-width: 45em) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "small" {
+        @media (min-width: 46.9em) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "medium" {
+        @media (min-width: 47em) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "medium-large" {
+        @media (min-width: 48em) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "medium-xtra-large" {
+        @media (min-width: 60.93em) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "large-small" {
+        @media (min-width: 63.75em) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "large" {
+        @media (min-width: 70em)  {
+            @content;
+        }
+    }
+  
+    @else if $breakpoint == "large-xtra-large" {
+        @media (min-width: 76em)  {
+            @content;
+        }
+    }
+}
+
+
+@mixin margin-center($width) {
+    width: $width;
+    margin-left: auto;
+    margin-right: auto;
+}
