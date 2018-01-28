@@ -138,6 +138,9 @@ h3.underline:after {
     }
 }
 
+.mb-4em {
+    margin-bottom: 4em;
+}
 
 .mb-6em {
     margin-bottom: 6em;
@@ -152,4 +155,16 @@ h3.underline:after {
 
 .no-padding {
     padding: 0;
+}
+
+
+.float-right {
+    float: right;
+}
+
+.float-right-mdl {
+    float:left;
+    @include respond-to("medium-large") {
+        float:right;
+    }
 }

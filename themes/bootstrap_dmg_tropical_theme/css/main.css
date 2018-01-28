@@ -82,7 +82,7 @@ h2 {
 h2.underline:after {
   display: block;
   height: 2px;
-  background-color: #58b970;
+  background-color: #026E1E;
   content: " ";
   width: 6.25em;
   margin: 0 auto;
@@ -92,7 +92,7 @@ h2.underline:after {
 h3.underline:after {
   display: block;
   height: 2px;
-  background-color: #58b970;
+  background-color: #026E1E;
   content: " ";
   width: 6.25em;
   margin: 0 auto;
@@ -153,6 +153,9 @@ h3.underline:after {
     .medium-mb-3em {
       margin-bottom: 0; } }
 
+.mb-4em {
+  margin-bottom: 4em; }
+
 .mb-6em {
   margin-bottom: 6em; }
 
@@ -161,6 +164,15 @@ h3.underline:after {
 
 .no-padding {
   padding: 0; }
+
+.float-right {
+  float: right; }
+
+.float-right-mdl {
+  float: left; }
+  @media (min-width: 48em) {
+    .float-right-mdl {
+      float: right; } }
 
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -188,7 +200,7 @@ ul.menu.dropdown-menu li {
   transition: .2s linear background-color, .2s linear color; }
 
 ul.menu.dropdown-menu li > a:hover {
-  background-color: #58b970;
+  background-color: #026E1E;
   color: rgba(255, 255, 255, 0.95); }
 
 #navbar-icon {
@@ -227,9 +239,9 @@ footer.footer.container-fluid {
       padding: 0 1em;
       color: rgba(255, 255, 255, 0.95); }
     footer.footer.container-fluid .footer-wrapper ul.menu.nav > li > a:hover {
-      color: #58b970;
+      color: #026E1E;
       background-color: #292929;
-      border-bottom-color: #58b970; }
+      border-bottom-color: #026E1E; }
     footer.footer.container-fluid .footer-wrapper ul.menu.nav > li > a:active {
       color: #dfb33b;
       background-color: #292929;
@@ -255,14 +267,14 @@ footer.footer.container-fluid {
   -webkit-transition: .2s;
   transition: background-color .2s linear, border .2s linear;
   text-decoration: none;
-  border: solid 1px #58b970;
+  border: solid 1px #026E1E;
   color: rgba(255, 255, 255, 0.95);
-  background-color: #58b970; }
+  background-color: #026E1E; }
 
 .btn-primary.btn:hover {
   text-decoration: none;
-  background-color: #1D8538;
-  border: solid 1px #1D8538; }
+  background-color: #005316;
+  border: solid 1px #005316; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -305,7 +317,7 @@ and open the template in the editor.
       color: #757575;
       transition: .5s linear; }
       .card__title > a:hover {
-        color: #58b970; }
+        color: #026E1E; }
   .card__image > img {
     margin: 0 auto;
     margin-top: 1em; }
@@ -318,7 +330,7 @@ and open the template in the editor.
   margin-left: -25px;
   margin-right: -25px;
   text-align: center;
-  background: linear-gradient(#379F52, #58b970);
+  background: linear-gradient(#005316, #026E1E);
   color: rgba(255, 255, 255, 0.95);
   margin-bottom: 2em; }
 
@@ -410,14 +422,14 @@ a.hero-btn {
   -webkit-transition: .2s;
   transition: background-color .2s linear, border .2s linear;
   text-decoration: none;
-  border: solid 1px #58b970;
+  border: solid 1px #026E1E;
   color: rgba(255, 255, 255, 0.95);
-  background-color: #58b970; }
+  background-color: #026E1E; }
 
 a.hero-btn:hover {
   text-decoration: none;
-  background-color: #1D8538;
-  border: solid 1px #1D8538; }
+  background-color: #005316;
+  border: solid 1px #005316; }
 
 /* Hero Section - Individual Product Button */
 #hero-prd-btn {
@@ -487,7 +499,7 @@ a.hero-btn:hover {
 .icon-big {
   font-size: 200%;
   display: block;
-  color: #58b970;
+  color: #026E1E;
   margin-bottom: 10px; }
 
 /* Quad Product Landing Page section */
@@ -510,14 +522,14 @@ a.hero-btn:hover {
   transition: .5s linear; }
 
 .views-field.views-field-title.quality-title > span > a:hover {
-  color: #58b970; }
+  color: #026E1E; }
 
 .quality-bullets > ul > li {
   list-style-type: none;
   margin-left: -30px; }
 
 .quality {
-  color: #58b970;
+  color: #026E1E;
   /* Make the icons the appropriate color. */ }
 
 /* The Quality points of the product. */
@@ -605,7 +617,7 @@ and open the template in the editor.
 .promo {
   display: inline-block;
   text-align: center;
-  color: #58b970;
+  color: #026E1E;
   width: 31%; }
   @media (min-width: 33em) {
     .promo {
@@ -688,8 +700,9 @@ and open the template in the editor.
 #blog-all-header {
   margin-left: -25px;
   margin-right: -25px;
-  background-color: #58b970;
+  background-color: #026E1E;
   margin-bottom: 4em;
+  margin-top: -10px;
   text-align: center;
   color: rgba(255, 255, 255, 0.95); }
 
@@ -721,13 +734,13 @@ and open the template in the editor.
   font-size: .75em; }
 
 .author.blog-author-date {
-  background-color: #58B970;
   margin-left: -25px;
   margin-right: -25px;
-  margin-top: -2em;
+  margin-top: -4em;
   padding-bottom: 2em;
   text-align: center;
-  margin-bottom: 4em; }
+  margin-bottom: 4em;
+  color: #fefefe; }
 
 .field.field--name-body.field--type-text-with-summary.field--label-hidden.field--item.quickedit-field {
   margin-bottom: 4em; }
@@ -774,7 +787,7 @@ div.error-page-body {
     list-style: none; }
   .field.error-page-body .resource-ul > li > a {
     text-decoration: none;
-    color: #58b970;
+    color: #026E1E;
     transition: 1px linear color; }
   .field.error-page-body .resource-ul > li > a:hover {
     color: #dfb33b; }
