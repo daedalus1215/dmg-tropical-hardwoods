@@ -24,6 +24,7 @@ and open the template in the editor.
 
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active {
     background-color: $secondary-action-color;
+    z-index: 1;
 }
 
 ul.menu.dropdown-menu li {

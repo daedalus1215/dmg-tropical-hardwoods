@@ -24,12 +24,11 @@ and open the template in the editor.
     margin-top: -20px;
 }
 
-.field.field--name-field-product-images.field--type-image.field--label-visually_hidden.col-md-4 > .field--item > .img-responsive {
-    width: 100%;
+.field.field--name-field-product-images.field--type-image.field--label-visually_hidden.col-sm-4.mb-3em.medium-mt-3em > .field--item > .img-responsive {    
     margin-top: 2em;
+    width: 100%;
 
     @include respond-to(medium) {
-        width: auto;
         margin-top: 0;
     }
 }

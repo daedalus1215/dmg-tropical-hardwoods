@@ -194,7 +194,8 @@ and open the template in the editor.
   border-radius: 0px; }
 
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active {
-  background-color: #dfb33b; }
+  background-color: #dfb33b;
+  z-index: 1; }
 
 ul.menu.dropdown-menu li {
   transition: .2s linear background-color, .2s linear color; }
@@ -562,12 +563,11 @@ and open the template in the editor.
   text-align: right;
   margin-top: -20px; }
 
-.field.field--name-field-product-images.field--type-image.field--label-visually_hidden.col-md-4 > .field--item > .img-responsive {
-  width: 100%;
-  margin-top: 2em; }
+.field.field--name-field-product-images.field--type-image.field--label-visually_hidden.col-sm-4.mb-3em.medium-mt-3em > .field--item > .img-responsive {
+  margin-top: 2em;
+  width: 100%; }
   @media (min-width: 47em) {
-    .field.field--name-field-product-images.field--type-image.field--label-visually_hidden.col-md-4 > .field--item > .img-responsive {
-      width: auto;
+    .field.field--name-field-product-images.field--type-image.field--label-visually_hidden.col-sm-4.mb-3em.medium-mt-3em > .field--item > .img-responsive {
       margin-top: 0; } }
 
 .custom-title {
