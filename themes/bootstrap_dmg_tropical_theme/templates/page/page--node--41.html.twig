@@ -55,7 +55,6 @@
  * @see template_preprocess_page()
  * @see html.html.twig
  */
-
 #}
 {% set url = (base_path ~ 'sites/default/files/icon.svg') %}
 
@@ -78,6 +77,7 @@
         {{ page.navigation }}
         {# .btn-navbar is used as the toggle for collapsed navbar content #}
         <a href="{{ url('<front>') }}"><img id="navbar-icon" class="mr-15px" src="{{ url }}"></img></a> {# Adding in our icon here #}
+
         {% if page.navigation_collapsible %}
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
             <span class="sr-only">{{ 'Toggle navigation'|t }}</span>
@@ -166,13 +166,6 @@
         {# Content #}
         {% block content %}
           <a id="main-content"></a>
-            <section id="block-title" class="clearfix">
-            <h1>
-              <span id="block-title-content">
-                <span>DMG Products</span>
-              </span>
-            </h1>
-          </section>
           {{ page.content }}
         {% endblock %}
       </section>

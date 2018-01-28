@@ -71,3 +71,14 @@ and open the template in the editor.
     margin-left: auto;
     margin-right: auto;
 }
+
+
+@mixin full-view-port($bck-pos-percent) {
+    width: 100vw;
+    height: 100vh;
+    margin-right: -20px;
+    margin-left: -20px;
+    background-position: $bck-pos-percent;
+    background-size: cover;
+
+}

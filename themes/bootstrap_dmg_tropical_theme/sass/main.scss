@@ -14,30 +14,32 @@ and open the template in the editor.
 @import 'abstract/utilities';
 
 
-@import 'components/_navbar';
-@import 'components/_footer_navbar';
-@import 'components/_action-buttons';
-@import 'components/_card';
-@import 'components/_add-content-list';
+@import 'components/navbar';
+@import 'components/footer_navbar';
+@import 'components/action-buttons';
+@import 'components/card';
+@import 'components/add-content-list';
 
+@import 'block/block_title';
 
-@import 'block/_block_title';
+@import 'pages/landing-page';
 
-@import 'pages/_landing-page';
-
-@import 'pages/_product-page';
-@import 'pages/_product-ww2-article';
-@import 'pages/_product-dmg-decking-page';
+@import 'pages/product-page';
+@import 'pages/product-ww2-article';
+@import 'pages/product-dmg-decking-page';
 
 @import 'pages/_about-page';
-@import 'pages/blog-pages/_blog_all-page';
-@import 'pages/blog-pages/_blog-page';
-@import 'pages/slab-pages/_slab_view';
-@import 'pages/_feedback-contact';
-@import 'pages/_contact';
-@import 'pages/_pages';
-@import 'pages/_error-404-page';
-@import 'views/_testimonial_view';
+@import 'pages/blog-pages/blog_all-page';
+@import 'pages/blog-pages/blog-page';
+@import 'pages/slab-pages/slab_view';
+@import 'pages/feedback-contact';
+@import 'pages/contact';
+@import 'pages/pages';
+@import 'pages/error-404-page';
+@import 'pages/section-broko';
+
+
+@import 'views/testimonial_view';
 
 
 
