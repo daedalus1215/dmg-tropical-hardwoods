@@ -217,37 +217,37 @@ ul.menu.dropdown-menu li > a:hover {
 #navbar-icon::after {
   content: "DMG"; }
 
-footer.footer.container-fluid {
+footer {
   font-size: .65em;
   background-color: #292929;
   height: 220px; }
-  footer.footer.container-fluid .footer-wrapper {
+  footer .footer-wrapper {
     padding-top: 2em; }
-    footer.footer.container-fluid .footer-wrapper span#contact-options {
+    footer .footer-wrapper span#contact-options {
       color: #757575; }
-    footer.footer.container-fluid .footer-wrapper nav#block-bootstrap-dmg-tropical-theme-footer {
+    footer .footer-wrapper nav#block-bootstrap-dmg-tropical-theme-footer {
       padding-top: 3em;
       border-top: 1px #757575 solid; }
-    footer.footer.container-fluid .footer-wrapper ul.menu.nav > li {
+    footer .footer-wrapper ul.menu.nav > li {
       display: inline-block;
       padding: 0 .5em; }
-    footer.footer.container-fluid .footer-wrapper ul.menu.nav > li:first-child {
+    footer .footer-wrapper ul.menu.nav > li:not(:last-child) {
       border-right: 1px dotted #757575; }
-    footer.footer.container-fluid .footer-wrapper ul.menu.nav > li > a {
+    footer .footer-wrapper ul.menu.nav > li > a {
       transition: color .2s linear, border-bottom-color .2s linear;
       text-decoration: none;
       border-bottom: 1px dotted #757575;
       padding: 0 1em;
       color: rgba(255, 255, 255, 0.95); }
-    footer.footer.container-fluid .footer-wrapper ul.menu.nav > li > a:hover {
+    footer .footer-wrapper ul.menu.nav > li > a:hover {
       color: #026E1E;
       background-color: #292929;
       border-bottom-color: #026E1E; }
-    footer.footer.container-fluid .footer-wrapper ul.menu.nav > li > a:active {
+    footer .footer-wrapper ul.menu.nav > li > a:active {
       color: #dfb33b;
       background-color: #292929;
       border-bottom-color: #dfb33b; }
-    footer.footer.container-fluid .footer-wrapper ul.menu.nav > li > a:visited {
+    footer .footer-wrapper ul.menu.nav > li > a:visited {
       color: rgba(255, 255, 255, 0.95);
       background-color: #292929;
       border-bottom-color: rgba(255, 255, 255, 0.95); }
