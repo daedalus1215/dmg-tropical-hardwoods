@@ -139,6 +139,7 @@ function isErrorPath($urlRequestPath)
 
 /**
  * Implements hook_form_FORM_ID_alter().
+ * Let's make sure we embed a new submit handler for the login form.
  */
 function bootstrap_dmg_tropical_theme_form_user_login_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   // Alter login form and add own custom submit handler.
@@ -146,9 +147,19 @@ function bootstrap_dmg_tropical_theme_form_user_login_form_alter(&$form, FormSta
 }
 
 /**
- * Custom submit handler for login form.
+ * Custom submit handler so we can redirect the user when they login.
  */
 function _bootstrap_dmg_tropical_theme_user_login_form_submit($form, FormStateInterface &$form_state) {
   // Set redirect to login form.
   $form_state->setRedirect('<front>');
 }
+
+
+
+//function bootstrap_dmg_tropical_theme_preprocess_node(&$variables) {
+//    $nodeType = $variables['node']->getType();
+//    if ($nodeType == "landing_page_type") {
+//          return new Symfony\Component\HttpFoundation\RedirectResponse('<front>');
+//    }
+//}
+  
