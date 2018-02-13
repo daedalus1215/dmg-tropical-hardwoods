@@ -52,12 +52,17 @@
     label_display == 'visually_hidden' ? 'sr-only',
   ]
 %}
-
 {%
   set species_classes = [
     'col-sm-12',
     'center',
     'mt-4em'
+  ]
+%}
+
+{%
+  set custom_classes = [
+    'inline'
   ]
 %}
 
@@ -79,8 +84,9 @@
     {% if multiple %}
       <div class="field__items">
     {% endif %}
+    <div class="field--label">Domestic Species</div>
     {% for item in items %}
-      <div{{ item.attributes.addClass('field--item', 'inline') }}>{{ item.content }}</div>
+      <div{{ item.attributes.addClass('field--item', custom_classes) }}>{{ item.content }}</div>
     {% endfor %}
     {% if multiple %}
       </div>

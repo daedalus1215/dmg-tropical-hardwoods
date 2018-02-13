@@ -54,36 +54,57 @@
 %}
 
 {%
-  set species_classes = [
+  set tropical_classes = [
     'col-sm-12',
-    'center',
-    'mt-4em'
   ]
 %}
-
-{% if label_hidden %}
-  {% if multiple %}
-    <div{{ attributes.addClass(classes, 'field--items') }}>
-      {% for item in items %}
-        <div{{ item.attributes.addClass('field--item') }}>{{ item.content }}</div>
-      {% endfor %}
-    </div>
+{% if label_hidden %}    
+  {% if multiple %}          
+    <div class="tropical-species-row">
+      <div class="col-sm-4">
+        <h4>Tropical Species</h4>
+        <ul>
+          <div{{ attributes.addClass(classes, 'field--items') }}>
+            {% for item in items %}
+              <li><div{{ item.attributes.addClass('field--item') }}>{{ item.content }}</div></li>
+            {% endfor %}
+          </div>
+        </ul> 
+      </div> <!-- end of col-sm-4 -->
+    </div> <!-- tropical-species-row -->
   {% else %}
-    {% for item in items %}
-      <div{{ attributes.addClass(classes, 'field--item') }}>{{ item.content }}</div>
-    {% endfor %}
+    <div class="tropical-species-row">
+      <div class="col-sm-4 mt-4em">
+        <h4>Tropical Species</h4>
+        <ul>
+          {% for item in items %}
+            <li><div{{ attributes.addClass(classes, 'field--item') }}>{{ item.content }}</div></li>
+          {% endfor %}
+        </ul> 
+      </div> <!-- end of col-sm-4 -->
+    </div> <!-- tropical-species-row -->
   {% endif %}
+        
 {% else %}
-  <div{{ attributes.addClass(classes, species_classes) }}>
+  <div{{ attributes.addClass(classes) }}>
     <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
     {% if multiple %}
       <div class="field__items">
     {% endif %}
-    {% for item in items %}
-      <div{{ item.attributes.addClass('field--item', 'inline') }}>{{ item.content }}</div>
-    {% endfor %}
+   <div class="tropical-species-row">
+      <div {{ attributes.addClass(tropical_classes) }}>
+        <h4>Tropical Species</h4>
+        <ul>    
+          {% for item in items %}
+            <li><div{{ item.attributes.addClass('field--item') }}>{{ item.content }}</div></li>
+          {% endfor %}
+        </ul> 
+      </div> <!-- end of col-sm-4 -->
+    </div> <!-- tropical-species-row -->     
     {% if multiple %}
-      </div>
+      </div>    
     {% endif %}
-  </div>
+    </div>  
+  </div>      
 {% endif %}
+    
