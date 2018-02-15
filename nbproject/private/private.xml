@@ -3,12 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/dmg/themes/bootstrap_dmg_tropical_theme/bootstrap_dmg_tropical_theme.libraries.yml</file>
+            <file>file:/C:/xampp/htdocs/dmg/composer.json</file>
             <file>file:/C:/xampp/htdocs/dmg/themes/bootstrap_dmg_tropical_theme/bootstrap_dmg_tropical_theme.theme</file>
             <file>file:/C:/xampp/htdocs/dmg/themes/bootstrap_dmg_tropical_theme/templates/System/page--system--404.html.twig</file>
             <file>file:/C:/xampp/htdocs/dmg/sites/default/settings.php</file>
             <file>file:/C:/xampp/htdocs/dmg/themes/bootstrap_dmg_tropical_theme/templates/node/node--41--full.html.twig</file>
+            <file>file:/C:/xampp/htdocs/dmg/themes/bootstrap_dmg_tropical_theme/templates/fields/field--node--field-species--product-type.html.twig</file>
             <file>file:/C:/xampp/htdocs/dmg/themes/bootstrap_dmg_tropical_theme/sass/abstract/_utilities.scss</file>
+            <file>file:/C:/xampp/htdocs/dmg/composer.lock</file>
         </group>
     </open-files>
 </project-private>

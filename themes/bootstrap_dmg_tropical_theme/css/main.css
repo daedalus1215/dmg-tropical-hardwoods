@@ -367,7 +367,8 @@ and open the template in the editor.
   width: 90%;
   position: absolute;
   left: 50%;
-  top: 10em; }
+  top: 10em;
+  text-align: center; }
   @media (min-width: 47em) {
     #display-name-wrapper {
       position: absolute;
@@ -380,17 +381,14 @@ and open the template in the editor.
       top: 15em; } }
 
 #header-icon {
-  display: none; }
-  @media (min-width: 76em) {
-    #header-icon {
-      display: inline-block;
-      width: 150px;
-      position: relative;
-      bottom: 4em; } }
+  display: inline-block;
+  width: 150px; }
 
 /* Hero Section - Display Name */
 .field.field--name-field-displaying-name.field--type-text.field--label-hidden.field--item {
-  display: inline-block; }
+  display: block;
+  width: 100%;
+  text-align: center; }
   @media (min-width: 47em) {
     .field.field--name-field-displaying-name.field--type-text.field--label-hidden.field--item {
       font-size: 200%; } }

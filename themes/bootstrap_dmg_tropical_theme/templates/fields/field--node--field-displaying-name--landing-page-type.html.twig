@@ -62,7 +62,6 @@
 </div>
 
 <div id="display-name-wrapper">
-<a href="/brokopondo"><img id="header-icon" src="{{ 'sites/default/files/logo-icon.png' }}"></img></a>
 
     {% if label_hidden %}
         {% if multiple %}
@@ -91,8 +90,9 @@
         </div>
     {% endif %}
     
-    <div id="{{hero_button_wrapper_id}}">
+{#    <div id="{{hero_button_wrapper_id}}">
         <a type="button" id="{{ hero_benefit_btn }}" class="hero-btn" href="/contact">Contact now</a>
-    </div>
+    </div>#}
+    <a href="/brokopondo" class="display-name-wrapper__header-icon"><img id="header-icon" class="display-name-wrapper__header-icon-image" src="{{ 'sites/default/files/logo-icon.png' }}"></img></a>
 
 </div>

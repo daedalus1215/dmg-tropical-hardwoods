@@ -34,6 +34,7 @@ and open the template in the editor.
     position: absolute;
     left: 50%;
     top: 10em;
+    text-align: center;
 
 
     @include respond-to(medium) {
@@ -50,19 +51,16 @@ and open the template in the editor.
 }
 
 #header-icon {
-    display: none;
-    @include respond-to("large-xtra-large") {
-        display: inline-block;
-        width: 150px;
-        position: relative;
-        bottom: 4em;
-    }
+    display: inline-block;
+    width: 150px;
 }
 
 /* Hero Section - Display Name */
 .field.field--name-field-displaying-name.field--type-text.field--label-hidden.field--item {    
-    display:inline-block;
-
+    display:block;
+    width: 100%;
+    text-align: center;
+    
     @include respond-to(medium) {
         font-size: 200%;
     }
