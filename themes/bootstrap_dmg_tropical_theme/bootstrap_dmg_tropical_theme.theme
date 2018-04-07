@@ -93,7 +93,6 @@ function bootstrap_dmg_tropical_theme_preprocess_paragraph(&$variables) {
 
 
 
-
 /**
  * Implements hook_theme_suggestions_page() to set 40x template suggestions
  */
