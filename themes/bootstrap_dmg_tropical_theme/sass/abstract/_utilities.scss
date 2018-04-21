@@ -138,6 +138,12 @@ h3.underline:after {
     }
 }
 
+.small-mb-3em {
+    @include respond-to("small") {
+        margin-bottom: 3em;
+    }
+}
+
 .mb-4em {
     margin-bottom: 4em;
 }
@@ -172,4 +178,8 @@ h3.underline:after {
 
 .inline {
     display: inline-block;
+}
+
+.anchor--dark-black-text > a {
+    color: $dark-black-color;
 }

@@ -53,10 +53,10 @@
 %}
 {% block paragraph %}    
     <div{{ attributes.addClass(classes) }}>
-        <a href="{{ content.uri_link }}"><span  class="card__background-link" ></span></a>
         {% block content %}
             {{ content }}
         {% endblock %}
+        <a href="{{ content.uri_link }}"><span  class="card__background-link" ></span></a>
     </div>
 
 {% endblock paragraph %}

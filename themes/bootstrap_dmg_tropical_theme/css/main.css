@@ -153,6 +153,10 @@ h3.underline:after {
     .medium-mb-3em {
       margin-bottom: 0; } }
 
+@media (min-width: 46.9em) {
+  .small-mb-3em {
+    margin-bottom: 3em; } }
+
 .mb-4em {
   margin-bottom: 4em; }
 
@@ -176,6 +180,9 @@ h3.underline:after {
 
 .inline {
   display: inline-block; }
+
+.anchor--dark-black-text > a {
+  color: #292929; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -219,6 +226,10 @@ ul.menu.dropdown-menu li > a:hover {
 
 #navbar-icon::after {
   content: "DMG"; }
+
+/* The hover effect of the sub menu. - this is partially working, but I am going to stop here. wasting too much time.*/
+ul.menu.nav.navbar-nav li:hover > ul {
+  display: block; }
 
 footer {
   font-size: .65em;

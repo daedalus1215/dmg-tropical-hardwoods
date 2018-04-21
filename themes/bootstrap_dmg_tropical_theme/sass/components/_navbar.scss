@@ -13,8 +13,10 @@ and open the template in the editor.
     
     &-collapse {
         background-color: $inverse-primary-color;
-    }
+    }        
 }
+
+
 
 #navbar.navbar-default.container-fluid {
     margin-bottom: 0px;
@@ -52,4 +54,10 @@ ul.menu.dropdown-menu li > a:hover {
 
 #navbar-icon::after {
     content: "DMG";
+}
+
+
+/* The hover effect of the sub menu. - this is partially working, but I am going to stop here. wasting too much time.*/
+ul.menu.nav.navbar-nav li:hover > ul {    
+    display: block;    
 }
