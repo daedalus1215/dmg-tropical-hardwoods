@@ -85,7 +85,6 @@
   {% endif %}
   {{ title_suffix }}
   {% if display_submitted %}
-    <footer>
       {# {{ author_picture }} #}
       {% set createdDate = node.getCreatedTime|date('F m Y') %} 
       <div{{ author_attributes.addClass('author', 'blog-author-date') }}>
@@ -93,7 +92,6 @@
         {% trans %} {{ createdDate|e }}{% endtrans %}
         {{ metadata }}
       </div>
-    </footer>
   {% endif %}
 
   <div{{ content_attributes.addClass('content') }}>
