@@ -1,0 +1,39 @@
+<?php
+
+
+/**
+ * Alter the result of \Drupal\Core\Block\BlockBase::build().
+ *
+ * This hook is called after the content has been assembled in a structured
+ * array and may be used for doing processing which requires that the complete
+ * block content structure has been built.
+ *
+ * If the module wishes to act on the rendered HTML of the block rather than
+ * the structured content array, it may use this hook to add a #post_render
+ * callback. Alternatively, it could also implement hook_preprocess_HOOK() for
+ * block.html.twig. See drupal_render() documentation or the
+ * @link themeable Default theme implementations topic @endlink for details.
+ *
+ * In addition to hook_block_view_alter(), which is called for all blocks, there
+ * is hook_block_view_BASE_BLOCK_ID_alter(), which can be used to target a
+ * specific block or set of similar blocks.
+ *
+ * @param array &$build
+ *   A renderable array of data, as returned from the build() implementation of
+ *   the plugin that defined the block:
+ *   - #title: The default localized title of the block.
+ * @param \Drupal\Core\Block\BlockPluginInterface $block
+ *   The block plugin instance.
+ *
+ * @see hook_block_view_BASE_BLOCK_ID_alter()
+ * @see entity_crud
+ *
+ * @ingroup block_api
+ */
+//function dmg_tropical_module_taxonomy_view_alter(array &$build, \Drupal\Core\Block\BlockPluginInterface $block) {
+//  // Remove the contextual links on all blocks that provide them.
+//    if ($build['#id'] == 'views_block__quad_landing_page_block_1') {
+//        
+//    }
+// 
+//}

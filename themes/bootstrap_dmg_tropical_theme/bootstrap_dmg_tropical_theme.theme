@@ -155,10 +155,3 @@ function _bootstrap_dmg_tropical_theme_user_login_form_submit($form, FormStateIn
 
 
 
-//function bootstrap_dmg_tropical_theme_preprocess_node(&$variables) {
-//    $nodeType = $variables['node']->getType();
-//    if ($nodeType == "landing_page_type") {
-//          return new Symfony\Component\HttpFoundation\RedirectResponse('<front>');
-//    }
-//}
-  

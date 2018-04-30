@@ -114,6 +114,9 @@ h3.underline:after {
 .mt-1em {
   margin-top: 1em; }
 
+.mt-2em {
+  margin-top: 2em; }
+
 .mt-3em {
   margin-top: 3em; }
 
@@ -820,6 +823,31 @@ div.error-page-body {
 
 .section-brokopondo__img > img {
   width: 100%; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 29, 2018, 11:21:26 AM
+    Author     : ladam
+*/
+.brokopondo-header-block {
+  background: linear-gradient(#005316, #026E1E);
+  height: 6em;
+  margin-left: -25px;
+  margin-right: -25px;
+  text-align: center;
+  background: linear-gradient(#005316, #026E1E);
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 2em;
+  padding-top: 2px; }
+  .brokopondo-header-block__header-icon {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; }
 
 .view-testimonial.view.view-testimonial-view.view-id-testimonial_view.view-display-id-block_1 {
   font-size: .75em;

@@ -1,0 +1,10 @@
+name: Dmg Tropical module
+description: Intent to override the landing page's Timber Product hook.
+package: Custom
+
+type: module
+version: 1.0
+core: 8.x
+
+dependencies:
+    - drupal:views
